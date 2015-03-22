@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="author" content="Mobify">
+<title>Rowan Weismiller | Designer</title>
+<meta name="description" content="Rowan Weismiller is a designer, developer, and digital marketer living in Vancouver, Canada. ">
+<link rel="icon" href="favicon.png">
 
 <!-- Inline style tag FTW -->
 <style>
@@ -13,15 +18,26 @@ body {
 
     background-color: #008080;
 
-    font-family: "fira-sans-2", "HelveticaNeue-Light", "Helvetica Neue Light",
+    font-family: "Comic Sans MS", "HelveticaNeue-Light", "Helvetica Neue Light",
                  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.4;
+
+    -webkit-animation: 60s shift-background linear infinite;
+    -moz-animation: 60s shift-background linear infinite;
+    animation: 60s shift-background linear infinite;
 }
 h1 { font-size: 3.6rem; }
-a { color: #008080; text-decoration: none; }
-a:hover { color: #00adad; border-bottom: 1px solid #00adad; }
+a {
+    color: #008080;
+    text-decoration: none;
+
+    -webkit-animation: 60s shift-foreground linear infinite;
+    -moz-animation: 60s shift-foreground linear infinite;
+    animation: 60s shift-foreground linear infinite;
+}
+a:hover { text-decoration: underline; }
 .page {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -52,6 +68,55 @@ a:hover { color: #00adad; border-bottom: 1px solid #00adad; }
     body { font-size: 1.4rem; }
     h1 { font-size: 2.4rem; }
 }
+
+@-webkit-keyframes shift-background {
+    0% { background-color: #008080;}
+    25% { background-color: #FF19C2; }
+    50% { background-color: #00FFFF; }
+    75% { background-color: #CCAE14; }
+    100% { background-color: #008080; }
+}
+
+@-moz-keyframes shift-background {
+    0% { background-color: #008080;}
+    25% { background-color: #FF19C2; }
+    50% { background-color: #00FFFF; }
+    75% { background-color: #CCAE14; }
+    100% { background-color: #008080; }
+}
+
+@keyframes shift-background {
+    0% { background-color: #008080;}
+    25% { background-color: #FF19C2; }
+    50% { background-color: #00FFFF; }
+    75% { background-color: #CCAE14; }
+    100% { background-color: #008080; }
+}
+
+@-webkit-keyframes shift-foreground {
+    0% { color: #008080;}
+    25% { color: #FF19C2; }
+    50% { color: #00FFFF; }
+    75% { color: #CCAE14; }
+    100% { color: #008080; }
+}
+
+@-moz-keyframes shift-foreground {
+    0% { color: #008080;}
+    25% { color: #FF19C2; }
+    50% { color: #00FFFF; }
+    75% { color: #CCAE14; }
+    100% { color: #008080; }
+}
+
+@keyframes shift-foreground {
+    0% { color: #008080;}
+    25% { color: #FF19C2; }
+    50% { color: #00FFFF; }
+    75% { color: #CCAE14; }
+    100% { color: #008080; }
+}
+
 </style>
 
 <!-- Typekit Fonts -->
@@ -66,15 +131,13 @@ a:hover { color: #00adad; border-bottom: 1px solid #00adad; }
             <img class="portrait" src="images/rowan-weismiller-cross-eyed.jpg" alt="My face">
             <h1 class="title">Hey, I'm Rowan</h1>
             <p>
-                I'm a designer that empowers teams with strong creative
-                processes. I was born and raised in Vancouver, and I'm currently
-                working at <a href="//www.mobify.com/">Mobify</a> as a <a href="http://image.slidesharecdn.com/creativetechv5forslideshare-130410143813-phpapp02/95/what-is-a-creative-technologist-v30-28-638.jpg?cb=1365629727">Creative
-                Technologist</a>. I also do responsive landing pages on the side.
-                If you need help with that,
+                I'm a designer. I work to empower teams with strong creative
+                processes, and right now I'm working at
+                <a href="//www.mobify.com/">Mobify</a> as a
+                <a href="http://image.slidesharecdn.com/creativetechv5forslideshare-130410143813-phpapp02/95/what-is-a-creative-technologist-v30-28-638.jpg?cb=1365629727">Creative
+                Technologist</a>. I also do responsive stuff on the side, like
+                landing pages with Marketo for example. If you need help with that,
                 <a href="mailto:rowan.weismiller@gmail.com?Subject=Responsive%20landing%20pages&Body=Hey%20Rowan%2C%0A%0AI%20have%20a%20project%20coming%20up%20that%20I%20need%20some%20help%20with%3A">get in touch</a>.
-            </p>
-            <p>
-                If you wanna find me online:
             </p>
             <nav class="social">
                 <ul>
