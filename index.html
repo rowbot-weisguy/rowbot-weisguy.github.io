@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
+<!--
+.---.  .---..-./`)           .---.       ,-----.      .---.
+|   |  |_ _|\ .-.')          | ,_|     .'  .-,  '.    | ,_|
+|   |  ( ' )/ `-' \        ,-./  )    / ,-.|  \ _ \ ,-./  )
+|   '-(_{;}_)`-'`"`        \  '_ '`) ;  \  '_ /  | :\  '_ '`)
+|      (_,_) .---.          > (_)  ) |  _`,/ \ _/  | > (_)  )
+| _ _--.   | |   |         (  .  .-' : (  '\_/ \   ;(  .  .-'
+|( ' ) |   | |   |          `-'`-'|___\ `"/  \  ) /  `-'`-'|___
+(_{;}_)|   | |   |           |        \'. \_/``".'    |        \
+'(_,_) '---' '---'           `--------`  '-----'      `--------`
+-->
 <head>
 <meta charset="UTF-8">
 <meta name="author" content="Mobify">
@@ -11,7 +22,9 @@
 <!-- Inline style tag FTW -->
 <style>
 * { box-sizing: border-box; }
+
 html { font-size: 62.5%; height: 100%;}
+
 body {
     height: 100%;
     margin: 0;
@@ -28,7 +41,15 @@ body {
     -moz-animation: 60s shift-background linear infinite;
     animation: 60s shift-background linear infinite;
 }
+
+body.party {
+    -webkit-animation: 1s shift-background linear infinite;
+    -moz-animation: 1s shift-background linear infinite;
+    animation: 1s shift-background linear infinite;
+}
+
 h1 { font-size: 3.6rem; }
+
 a {
     color: #008080;
     text-decoration: none;
@@ -37,7 +58,17 @@ a {
     -moz-animation: 60s shift-foreground linear infinite;
     animation: 60s shift-foreground linear infinite;
 }
+
 a:hover { text-decoration: underline; }
+
+.party a {
+    -webkit-animation: 1s shift-foreground linear infinite;
+    -moz-animation: 1s shift-foreground linear infinite;
+    animation: 1s shift-foreground linear infinite;
+}
+
+img { max-width: 100%; }
+
 .page {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -52,22 +83,109 @@ a:hover { text-decoration: underline; }
     background-color: #ffffff;
     text-align: center;
 }
+
 .page__content {
     max-width: 600px;
     margin: 0 auto;
 }
+
 .portrait {
     max-width: 150px;
     border-radius: 50%;
     border: 5px solid white;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
 }
-.social ul { padding: 0; margin: 0; }
+
+.social ul { padding: 0; margin: 0 0 36px; }
+
 .social li { display: inline-block; margin-right: 0.5rem; }
-@media only screen and (max-width: 768px) {
-    body { font-size: 1.4rem; }
-    h1 { font-size: 2.4rem; }
+
+.party-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+    -webkit-animation: 60s shift-background linear infinite;
+    -moz-animation: 60s shift-background linear infinite;
+    animation: 60s shift-background linear infinite;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
+
+.party .party-button {
+    -webkit-animation: 1s shift-background linear infinite;
+    -moz-animation: 1s shift-background linear infinite;
+    animation: 1s shift-background linear infinite;
+}
+
+.party-button:hover {
+    text-decoration: none;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.active {
+    display: block;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-animation: 0.25s fade-in-bg ease-out forwards;
+    -moz-animation: 0.25s fade-in-bg ease-out forwards;
+    animation: 0.25s fade-in-bg ease-out forwards;
+}
+
+.modal.dismissed {
+    -webkit-animation: 0.25s fade-out-bg ease-out forwards;
+    -moz-animation: 0.25s fade-out-bg ease-out forwards;
+    animation: 0.25s fade-out-bg ease-out forwards;
+
+    pointer-events: none;
+}
+
+.modal.active .modal__panel {
+    max-width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+
+    background-color: white;
+    border-radius: 5px;
+
+    -webkit-animation: 0.5s fade-in-up ease-out forwards;
+    -moz-animation: 0.5s fade-in-up ease-out forwards;
+    animation: 0.5s fade-in-up ease-out forwards;
+}
+
+.modal.dismissed .modal__panel {
+    -webkit-animation: 0.5s fade-out-down ease-out forwards;
+    -moz-animation: 0.5s fade-out-down ease-out forwards;
+    animation: 0.5s fade-out-down ease-out forwards;
+
+    pointer-events: none;
+}
+
 
 @-webkit-keyframes shift-background {
     0% { background-color: #008080;}
@@ -117,49 +235,121 @@ a:hover { text-decoration: underline; }
     100% { color: #008080; }
 }
 
+@-webkit-keyframes fade-in-up {
+    from { -webkit-transform: translateY(50px); opacity: 0; }
+    to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes fade-in-up {
+    from { -moz-transform: translateY(50px); opacity: 0; }
+    to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fade-in-up {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@-webkit-keyframes fade-out-down {
+    from { -webkit-transform: translateY(0); opacity: 1; }
+    to { -webkit-transform: translateY(50px); opacity: 0; }
+}
+
+@-moz-keyframes fade-out-down {
+    from { -moz-transform: translateY(0); opacity: 1; }
+    to { -moz-transform: translateY(50px); opacity: 0; }
+}
+
+@keyframes fade-out-down {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(50px); opacity: 0; }
+}
+
+@-webkit-keyframes fade-in-bg {
+    from { background-color: rgba(0,0,0,0); }
+    to { background-color: rgba(0,0,0,0.5); }
+}
+
+@-moz-keyframes fade-in-bg {
+    from { background-color: rgba(0,0,0,0); }
+    to { background-color: rgba(0,0,0,0.5); }
+}
+
+@keyframes fade-in-bg {
+    from { background-color: rgba(0,0,0,0); }
+    to { background-color: rgba(0,0,0,0.5); }
+}
+
+@-webkit-keyframes fade-out-bg {
+    from { background-color: rgba(0,0,0,0.5); }
+    to { background-color: rgba(0,0,0,0); }
+}
+
+@-moz-keyframes fade-out-bg {
+    from { background-color: rgba(0,0,0,0.5); }
+    to { background-color: rgba(0,0,0,0); }
+}
+
+@keyframes fade-out-bg {
+    from { background-color: rgba(0,0,0,0.5); }
+    to { background-color: rgba(0,0,0,0); }
+}
+
+@media only screen and (max-width: 768px) {
+    body { font-size: 1.4rem; }
+    h1 { font-size: 2.4rem; }
+}
 </style>
 </head>
 
 <body>
-    <div class="page">
-        <div class="page__content">
-            <img class="portrait" src="images/rowan-weismiller-cross-eyed.jpg" alt="My face">
-            <h1 class="title">Hey, I'm Rowan</h1>
-            <p>
-                I'm a designer, and I work to empower teams with strong creative
-                processes. Right now I'm working at <a href="//www.mobify.com/">Mobify</a> as a
-                <a href="http://image.slidesharecdn.com/creativetechv5forslideshare-130410143813-phpapp02/95/what-is-a-creative-technologist-v30-28-638.jpg?cb=1365629727">Creative
-                Technologist</a>, but I also do responsive stuff on the side, like
-                landing pages with Marketo. If you need help with that,
-                <a href="mailto:rowan.weismiller@gmail.com?Subject=Responsive%20landing%20pages&Body=Hey%20Rowan%2C%0A%0AI%20have%20a%20project%20coming%20up%20that%20I%20need%20some%20help%20with%3A">email me</a>.
-            </p>
-            <nav class="social">
-                <ul>
-                    <li>
-                        <a href="mailto:rowan.weismiller@gmail.com">
-                            Email
-                        </a>
-                    </li>
-                    <li>
-                        <a href="//twitter.com/rowbot_weisguy">
-                            Twitter
-                        </a>
-                    </li>
-                    <li>
-                        <a href="//www.linkedin.com/in/rowanweismiller">
-                            LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a href="//www.facebook.com/hallucinterest">
-                            Facebook
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+
+<div class="page">
+    <div class="page__content">
+        <img class="portrait" src="images/rowan-weismiller-cross-eyed.jpg" alt="My face">
+        <h1 class="title">Hey, I'm Rowan</h1>
+        <p>
+            I'm a designer, and I work to empower teams with strong creative
+            processes. Right now I'm working at <a href="//www.mobify.com/">Mobify</a> as a
+            <a class="modal__trigger" href="#">Creative Technologist</a>, but I also do responsive stuff
+            on the side, like landing pages with Marketo. If you need help with that,
+            <a href="mailto:rowan.weismiller@gmail.com?Subject=Responsive%20landing%20pages&Body=Hey%20Rowan%2C%0A%0AI%20have%20a%20project%20coming%20up%20that%20I%20need%20some%20help%20with%3A">email me</a>.
+        </p>
+        <nav class="social">
+            <ul>
+                <li>
+                    <a href="mailto:rowan.weismiller@gmail.com">
+                        Email
+                    </a>
+                </li>
+                <li>
+                    <a href="//twitter.com/rowbot_weisguy">
+                        Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.linkedin.com/in/rowanweismiller">
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.facebook.com/hallucinterest">
+                        Facebook
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a class="party-button">Let's Party</a>
     </div>
-</body>
+</div>
+
+<div class="modal">
+    <div class="modal__panel">
+        <img src="images/creative-technologist.png" alt="The Creative Technologist is a T-Shaped professional whose primary expertise lies in the combination of design and development">
+    </div>
+</div>
+
+<!-- Google Analytics Tag -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -168,6 +358,51 @@ a:hover { text-decoration: underline; }
 
   ga('create', 'UA-61048127-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
+<!-- Modal Script -->
+<script>
+(function() {
+    var trigger = document.querySelectorAll('.modal__trigger')[0];
+    var modal = document.querySelectorAll('.modal')[0];
+    var panel = document.querySelectorAll('.modal__panel')[0];
+
+    function openModal() {
+        modal.classList.add('active');
+    }
+
+    function closeModal() {
+        modal.classList.add('dismissed');
+        setTimeout(function() {
+            modal.classList.remove('active', 'dismissed');
+        }, 500);
+    }
+
+    trigger.addEventListener('click', openModal, false);
+    modal.addEventListener('click', closeModal, false);
+})();
+</script>
+
+<!-- Party Script -->
+<script>
+(function() {
+    var body = document.querySelectorAll('body')[0];
+    var partyButton = document.querySelectorAll('.party-button')[0];
+    var isPartying = false;
+
+    function party() {
+        if (isPartying) {
+            body.classList.remove('party');
+            isPartying = false;
+        } else {
+            body.classList.add('party');
+            isPartying = true;
+        }
+    }
+
+    partyButton.addEventListener('click', party, false);
+})();
+</script>
+
+</body>
 </html>
