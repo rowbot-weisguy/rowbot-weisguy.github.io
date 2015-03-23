@@ -91,9 +91,33 @@ img { max-width: 100%; }
 
 .portrait {
     max-width: 150px;
+    margin: 0 auto;
+    overflow: hidden;
     border-radius: 50%;
     border: 5px solid white;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+}
+
+.party .portrait {
+    -webkit-animation: 0.5s pulse linear infinite;
+    -moz-animation: 0.5s pulse linear infinite;
+    animation: 0.5s pulse linear infinite;
+}
+
+.portrait__default {
+    display: block;
+}
+
+.party .portrait__default {
+    display: none;
+}
+
+.portrait__party {
+    display: none;
+}
+
+.party .portrait__party {
+    display: block;
 }
 
 .social ul { padding: 0; margin: 0 0 36px; }
@@ -295,6 +319,24 @@ img { max-width: 100%; }
     to { background-color: rgba(0,0,0,0); }
 }
 
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.2); }
+    100% { -webkit-transform: scale(1); }
+}
+
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }
+    50% { -moz-transform: scale(1.2); }
+    100% { -moz-transform: scale(1); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
 @media only screen and (max-width: 768px) {
     body { font-size: 1.4rem; }
     h1 { font-size: 2.4rem; }
@@ -306,7 +348,10 @@ img { max-width: 100%; }
 
 <div class="page">
     <div class="page__content">
-        <img class="portrait" src="images/rowan-weismiller-cross-eyed.jpg" alt="My face">
+        <div class="portrait">
+            <img class="portrait__default" src="images/rowan-weismiller-portrait.jpg" alt="My face"/>
+            <img class="portrait__party" src="images/rowan-party.gif" alt="My face partying"/>
+        </div>
         <h1 class="title">Hey, I'm Rowan</h1>
         <p>
             I'm a designer, and I work to empower teams with strong creative
@@ -393,9 +438,11 @@ img { max-width: 100%; }
     function party() {
         if (isPartying) {
             body.classList.remove('party');
+            partyButton.textContent = "Let's Party";
             isPartying = false;
         } else {
             body.classList.add('party');
+            partyButton.textContent = "Stop Partying"
             isPartying = true;
         }
     }
