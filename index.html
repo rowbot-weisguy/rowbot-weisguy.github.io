@@ -21,6 +21,27 @@
 
 <!-- Inline style tag FTW -->
 <style>
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('fonts/ComicNeue-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/ComicNeue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/ComicNeue-Regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/ComicNeue-Regular.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('fonts/ComicNeue-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('fonts/ComicNeue-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/ComicNeue-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/ComicNeue-Bold.woff') format('woff'), /* Modern Browsers */
+       url('fonts/ComicNeue-Bold.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('fonts/ComicNeue-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+}
+
 * { box-sizing: border-box; }
 
 html { font-size: 62.5%; height: 100%;}
@@ -32,7 +53,7 @@ body {
 
     background-color: #008080;
 
-    font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+    font-family: 'Comic Sans MS', 'Comic Neue', 'Marker Felt', sans-serif;
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 1.4;
