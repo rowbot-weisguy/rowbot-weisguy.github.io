@@ -434,11 +434,13 @@ ga('send', 'pageview');
         modal.classList.add('active');
     }
 
-    function closeModal() {
-        modal.classList.add('dismissed');
-        setTimeout(function() {
-            modal.classList.remove('active', 'dismissed');
-        }, 500);
+    function closeModal(e) {
+        if (e.target == modal) {
+            modal.classList.add('dismissed');
+            setTimeout(function() {
+                modal.classList.remove('active', 'dismissed');
+            }, 500);
+        }
     }
 
     trigger.addEventListener('click', openModal, false);
