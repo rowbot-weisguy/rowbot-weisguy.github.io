@@ -53,19 +53,18 @@ body {
 
     background-color: #008080;
 
-    font-family: 'Comic Sans MS', 'Comic Neue', 'Marker Felt', sans-serif;
-    font-weight: 300;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.4;
-
-    -webkit-animation: 60s shift-background linear infinite;
-    -moz-animation: 60s shift-background linear infinite;
-    animation: 60s shift-background linear infinite;
 }
 
 body.party {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    font-family: 'Comic Sans MS', 'Comic Neue', 'Marker Felt', sans-serif;
+
+    -webkit-animation: 1s shift-background linear infinite;
+    -moz-animation: 1s shift-background linear infinite;
+    animation: 1s shift-background linear infinite;
 }
 
 h1 { font-size: 3.6rem; }
@@ -73,17 +72,14 @@ h1 { font-size: 3.6rem; }
 a {
     color: #008080;
     text-decoration: none;
-
-    -webkit-animation: 60s shift-foreground linear infinite;
-    -moz-animation: 60s shift-foreground linear infinite;
-    animation: 60s shift-foreground linear infinite;
 }
 
 a:hover { text-decoration: underline; }
 
 .party a {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation: 1s shift-foreground linear infinite;
+    -moz-animation: 1s shift-foreground linear infinite;
+    animation: 1s shift-foreground linear infinite;
 }
 
 img { max-width: 100%; }
@@ -97,9 +93,10 @@ img { max-width: 100%; }
     align-items: center;
 
     height: 100%;
-    padding: 2rem;
+    padding: 4rem;
 
     background-color: #ffffff;
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -146,22 +143,24 @@ img { max-width: 100%; }
 .party-button {
     display: inline-block;
     padding: 10px 20px;
+
+    background-color: #008080;
     border-radius: 10px;
+
+    font-size: 16px;
     color: white;
     text-decoration: none;
-    cursor: pointer;
 
-    -webkit-animation: 60s shift-background linear infinite;
-    -moz-animation: 60s shift-background linear infinite;
-    animation: 60s shift-background linear infinite;
+    cursor: pointer;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
 .party .party-button {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation: 1s shift-background linear infinite;
+    -moz-animation: 1s shift-background linear infinite;
+    animation: 1s shift-background linear infinite;
 }
 
 .party-button:hover {
@@ -359,6 +358,14 @@ img { max-width: 100%; }
     body { font-size: 1.4rem; }
     h1 { font-size: 2.4rem; }
 }
+
+@media only screen and (max-height: 500px) {
+    html,
+    body,
+    .page {
+        height: auto;
+    }
+}
 </style>
 </head>
 
@@ -373,10 +380,11 @@ img { max-width: 100%; }
         <h1 class="title">Hey, I'm Rowan</h1>
         <p>
             I'm a designer, and I work to empower teams with strong creative
-            processes. Right now I'm working at <a href="//www.mobify.com/">Mobify</a> as a
+            processes. And then I build what I design. Right now I'm working at <a href="//www.mobify.com/">Mobify</a> as a
             <a class="modal__trigger" href="#">Creative Technologist</a>, but I also do responsive stuff
-            on the side, like landing pages with Marketo. If you need help with that,
-            <a href="mailto:rowan.weismiller@gmail.com?Subject=Responsive%20landing%20pages&Body=Hey%20Rowan%2C%0A%0AI%20have%20a%20project%20coming%20up%20that%20I%20need%20some%20help%20with%3A">email me</a>.
+            on the side, like landing pages with Marketo. Please, feel free to
+            <a href="mailto:rowan.weismiller@gmail.com?Subject=Responsive%20landing%20pages&Body=Hey%20Rowan%2C%0A%0AI%20have%20a%20project%20coming%20up%20that%20I%20need%20some%20help%20with%3A">email me</a> if you need some help with that.
+
         </p>
         <nav class="social">
             <ul>
