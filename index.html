@@ -57,14 +57,9 @@ body {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.4;
-}
 
-body.party {
-    font-family: 'Comic Sans MS', 'Comic Neue', 'Marker Felt', sans-serif;
-
-    -webkit-animation: 1s shift-background linear infinite;
-    -moz-animation: 1s shift-background linear infinite;
-    animation: 1s shift-background linear infinite;
+    -webkit-perspective: 1800px;
+    perspective: 1800px;
 }
 
 h1 { font-size: 3.6rem; }
@@ -75,12 +70,6 @@ a {
 }
 
 a:hover { text-decoration: underline; }
-
-.party a {
-    -webkit-animation: 1s shift-foreground linear infinite;
-    -moz-animation: 1s shift-foreground linear infinite;
-    animation: 1s shift-foreground linear infinite;
-}
 
 img { max-width: 100%; }
 
@@ -98,6 +87,10 @@ img { max-width: 100%; }
     background-color: #ffffff;
     border-radius: 5px;
     text-align: center;
+
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .page__content {
@@ -124,16 +117,8 @@ img { max-width: 100%; }
     display: block;
 }
 
-.party .portrait__default {
-    display: none;
-}
-
 .portrait__party {
     display: none;
-}
-
-.party .portrait__party {
-    display: block;
 }
 
 .social ul { padding: 0; margin: 0 0 36px; }
@@ -142,25 +127,21 @@ img { max-width: 100%; }
 
 .party-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 16px 32px;
 
     background-color: #008080;
     border-radius: 10px;
 
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 
     cursor: pointer;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-}
-
-.party .party-button {
-    -webkit-animation: 1s shift-background linear infinite;
-    -moz-animation: 1s shift-background linear infinite;
-    animation: 1s shift-background linear infinite;
 }
 
 .party-button:hover {
@@ -227,6 +208,51 @@ img { max-width: 100%; }
     pointer-events: none;
 }
 
+/* PARTY SECTION WOOO
+ * ============================ */
+
+body.partyOn {
+    font-family: 'Comic Sans MS', 'Comic Neue', 'Marker Felt', sans-serif;
+
+    -webkit-animation: 1s shift-background linear infinite;
+    -moz-animation: 1s shift-background linear infinite;
+    animation: 1s shift-background linear infinite;
+}
+
+.party .page {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.partyOn .page__content {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.partyOn a {
+    -webkit-animation: 1s shift-foreground linear infinite;
+    -moz-animation: 1s shift-foreground linear infinite;
+    animation: 1s shift-foreground linear infinite;
+}
+
+.partyOn .portrait__default {
+    display: none;
+}
+
+.partyOn .portrait__party {
+    display: block;
+}
+
+.partyOn .party-button {
+    -webkit-animation: 1s shift-background linear infinite;
+    -moz-animation: 1s shift-background linear infinite;
+    animation: 1s shift-background linear infinite;
+}
+
+/* Animations
+ * ============================ */
 
 @-webkit-keyframes shift-background {
     0% { background-color: #008080;}
@@ -354,6 +380,9 @@ img { max-width: 100%; }
     100% { transform: scale(1); }
 }
 
+/* Media Quizzles
+ * ============================ */
+
 @media only screen and (max-width: 768px) {
     body { font-size: 1.4rem; }
     h1 { font-size: 2.4rem; }
@@ -410,7 +439,7 @@ img { max-width: 100%; }
                 </li>
             </ul>
         </nav>
-        <a class="party-button">Let's Party</a>
+        <a class="party-button">Now, Let's Party!</a>
     </div>
 </div>
 
@@ -463,17 +492,27 @@ ga('send', 'pageview');
     var partyButton = document.querySelectorAll('.party-button')[0];
     var isPartying = false;
 
-    function party() {
-        if (isPartying) {
-            body.classList.remove('party');
-            partyButton.textContent = "Let's Party";
-            isPartying = false;
-        } else {
-            body.classList.add('party');
+    function stopParty() {
+        body.classList.remove('party');
+        setTimeout(function() {
+            body.classList.remove('partyOn');
+            partyButton.textContent = "Now, Let's Party!";
+        }, 250);
+        isPartying = false;
+    }
+
+    function startParty() {
+        body.classList.add('party');
+        setTimeout(function() {
+            body.classList.add('partyOn');
             partyButton.textContent = "Whoa, Calm Down";
-            ga('send', 'event', 'Primary', 'Party Time');
-            isPartying = true;
-        }
+        }, 250);
+        ga('send', 'event', 'Primary', 'Party Time');
+        isPartying = true;
+    }
+
+    function party() {
+        isPartying ? stopParty() : startParty();
     }
 
     partyButton.addEventListener('click', party, false);
