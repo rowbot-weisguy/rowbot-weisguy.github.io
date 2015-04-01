@@ -1,0 +1,14 @@
+.sass-cache
+.DS_Store
+.bak
+.swp
+.idea
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*.orig
+*.pyc
+*.pid
+
+node_modules
