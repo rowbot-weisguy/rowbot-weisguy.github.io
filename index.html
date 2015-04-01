@@ -82,7 +82,7 @@ img { max-width: 100%; }
     align-items: center;
 
     height: 100%;
-    padding: 4rem;
+    padding: 4rem 2rem;
 
     background-color: #ffffff;
     border-radius: 5px;
@@ -129,7 +129,7 @@ img { max-width: 100%; }
     border-radius: 10px;
 
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -216,7 +216,7 @@ body.party {
     animation: 1s shift-background linear infinite;
 }
 
-.partyOn a {
+.party a {
     -webkit-animation: 1s shift-foreground linear infinite;
     -moz-animation: 1s shift-foreground linear infinite;
     animation: 1s shift-foreground linear infinite;
@@ -369,7 +369,8 @@ body.party {
  * ============================ */
 
 @media only screen and (max-width: 768px) {
-    body { font-size: 1.4rem; }
+    body,
+    body.party { font-size: 1.4rem; line-height: 2.2rem; }
     h1 { font-size: 2.4rem; }
 }
 
@@ -394,9 +395,11 @@ body.party {
         <h1 class="title">Hey, I'm Rowan</h1>
         <p>
             I'm a designer, and I work to empower teams with strong creative
-            processes. And then I build what I design. Right now I'm working at <a href="//www.mobify.com/">Mobify</a> as a
-            <a class="modal__trigger" href="#">Creative Technologist</a>, but I also do responsive stuff
-            on the side, like landing pages with Marketo. Please, feel free to
+            processes. And then I build what I design. Right now I'm working
+            at <a href="//www.mobify.com/">Mobify</a> as a
+            <a class="modal__trigger" href="#">Creative Technologist</a>, but I
+            also do responsive stuff on the side, like landing pages with
+            Marketo. Please, feel free to
             <a href="mailto:rowan.weismiller@gmail.com?Subject=Responsive%20landing%20pages&Body=Hey%20Rowan%2C%0A%0AI%20have%20a%20project%20coming%20up%20that%20I%20need%20some%20help%20with%3A">email me</a> if you need some help with that.
 
         </p>
@@ -424,7 +427,7 @@ body.party {
                 </li>
             </ul>
         </nav>
-        <a class="party-button">Now, Let's Party!</a>
+        <a class="party-button">Let's Party!</a>
     </div>
 </div>
 
@@ -479,7 +482,7 @@ ga('send', 'pageview');
 
     function stopParty() {
         body.classList.remove('party');
-        partyButton.textContent = "Now, Let's Party!";
+        partyButton.textContent = "Let's Party!";
         isPartying = false;
     }
 
