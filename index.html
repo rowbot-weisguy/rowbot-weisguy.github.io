@@ -56,7 +56,7 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
-    line-height: 1.4;
+    line-height: 2.5rem;
 
     -webkit-perspective: 1800px;
     perspective: 1800px;
@@ -87,10 +87,6 @@ img { max-width: 100%; }
     background-color: #ffffff;
     border-radius: 5px;
     text-align: center;
-
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    -moz-transition: -moz-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
 }
 
 .page__content {
@@ -211,24 +207,13 @@ img { max-width: 100%; }
 /* PARTY SECTION WOOO
  * ============================ */
 
-body.partyOn {
+body.party {
     font-family: 'Comic Sans MS', 'Comic Neue', 'Marker Felt', sans-serif;
+    font-size: 1.6rem;
 
     -webkit-animation: 1s shift-background linear infinite;
     -moz-animation: 1s shift-background linear infinite;
     animation: 1s shift-background linear infinite;
-}
-
-.party .page {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.partyOn .page__content {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    transform: rotateY(180deg);
 }
 
 .partyOn a {
@@ -237,15 +222,15 @@ body.partyOn {
     animation: 1s shift-foreground linear infinite;
 }
 
-.partyOn .portrait__default {
+.party .portrait__default {
     display: none;
 }
 
-.partyOn .portrait__party {
+.party .portrait__party {
     display: block;
 }
 
-.partyOn .party-button {
+.party .party-button {
     -webkit-animation: 1s shift-background linear infinite;
     -moz-animation: 1s shift-background linear infinite;
     animation: 1s shift-background linear infinite;
@@ -494,19 +479,13 @@ ga('send', 'pageview');
 
     function stopParty() {
         body.classList.remove('party');
-        setTimeout(function() {
-            body.classList.remove('partyOn');
-            partyButton.textContent = "Now, Let's Party!";
-        }, 250);
+        partyButton.textContent = "Now, Let's Party!";
         isPartying = false;
     }
 
     function startParty() {
         body.classList.add('party');
-        setTimeout(function() {
-            body.classList.add('partyOn');
-            partyButton.textContent = "Whoa, Calm Down";
-        }, 250);
+        partyButton.textContent = "Whoa, Calm Down";
         ga('send', 'event', 'Primary', 'Party Time');
         isPartying = true;
     }
