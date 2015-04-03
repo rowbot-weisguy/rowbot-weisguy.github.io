@@ -14,7 +14,7 @@ module.exports = function (grunt) {
             options: {
                 livereload: true
             },
-            tasks: ['concat', 'sass', 'autoprefixer']
+            tasks: ['sass', 'autoprefixer', 'concat']
         },
 
         // Sass Config
@@ -65,8 +65,7 @@ module.exports = function (grunt) {
                 options: {
                     directory: '',
                     port: 4000,
-                    livereload: true,
-                    keepalive: true,
+                    livereload: true
                 }
             }
         },
@@ -81,27 +80,14 @@ module.exports = function (grunt) {
                 path: './',
                 app: 'Sublime Text 2'
             },
-        },
-
-        // Rev Config
-        rev: {
-            dist: {
-                files: {
-                    src: [
-                        'dist/assets/scripts/**/*.js',
-                        'dist/assets/styles/**/*.css',
-                        'dist/assets/images/**/*.{png,jpg,jpeg,gif,webp}',
-                        'dist/assets/styles/fonts/**/*.*'
-                    ]
-                }
-            }
-        },
+        }
     });
 
     // Register Tasks
     // Workon
     grunt.registerTask('workon', 'Start working on this project.', [
-        'sass:dev',
+        'build',
+        'connect',
         'open:site',
         'open:editor',
         'watch'
@@ -109,14 +95,16 @@ module.exports = function (grunt) {
 
     // Serve
     grunt.registerTask('serve', 'Serve the project.', [
+        'build',
         'connect',
         'watch'
     ]);
 
     // Build
-    grunt.registerTask('build', 'Build production ready assets and views.', [
-        'concat',
-        'rev',
+    grunt.registerTask('build', 'Build dev assets.', [
+        'sass',
+        'autoprefixer',
+        'concat'
     ]);
 
 };
