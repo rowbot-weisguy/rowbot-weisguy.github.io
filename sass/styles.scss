@@ -93,10 +93,6 @@ img {
     border: 5px solid white;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
 
-    .party & {
-        animation: 0.5s pulse linear infinite;
-    }
-
     &__default {
         display: block;
     }

@@ -13,18 +13,24 @@ body.party {
     }
 }
 
-.party a {
-    animation: 1s shift-foreground linear infinite;
-}
+.party {
+    a {
+        animation: 1s shift-foreground linear infinite;
+    }
 
-.party .portrait__default {
-    display: none;
-}
+    .portrait {
+        animation: 0.44s pulse linear infinite;
+    }
 
-.party .portrait__party {
-    display: block;
-}
+    .portrait__default {
+        display: none;
+    }
 
-.party .party-button {
-    animation: 1s shift-background linear infinite;
+    .portrait__party {
+        display: block;
+    }
+
+    .party-button {
+        animation: 1s shift-background linear infinite;
+    }
 }
