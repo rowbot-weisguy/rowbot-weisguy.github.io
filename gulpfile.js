@@ -8,14 +8,19 @@ var notify      = require('gulp-notify');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
+var imagemin    = require('gulp-imagemin');
 var cp          = require('child_process');
 
 var basePaths = {
-    src: './_src/assets/',
+    src: './_src/_assets/',
     dest: './_public/assets/',
 };
 
 var paths = {
+    images: {
+        src: basePaths.src + '_images/',
+        dest: basePaths.dest + 'images/'
+    },
     styles: {
         src: basePaths.src + '_scss/',
         dest: basePaths.dest + 'css/',
@@ -28,6 +33,7 @@ var paths = {
 
 var appFiles = {
     content: ['./_src/_layouts/*.html', './_src/_posts/*'],
+    images: paths.images.src + '*',
     styles: paths.styles.src + '**/*.scss',
     scripts: paths.scripts.src + '**/*.js'
 };
@@ -53,19 +59,12 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
     browserSync.reload();
 });
 
-/**
- * Wait for jekyll-build, then launch the Server
- */
-gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], function() {
-    browserSync({
-        server: { baseDir: '_public' },
-        notify: false
-    });
+gulp.task('images', function() {
+    return gulp.src(appFiles.images)
+        .pipe(imagemin())
+        .pipe(gulp.dest(paths.images.dest))
 });
 
-/**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
- */
 gulp.task('sass', function () {
     return gulp.src(appFiles.styles)
         .pipe(sass({
@@ -79,6 +78,16 @@ gulp.task('sass', function () {
 
 gulp.task('scripts', function() {
   return buildScript('main.js', false); // this will run once because we set watch to false
+});
+
+/**
+ * Wait for jekyll-build, then launch the Server
+ */
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: { baseDir: '_public' },
+        notify: false
+    });
 });
 
 function handleErrors() {
@@ -131,8 +140,10 @@ gulp.task('watch', function () {
     return buildScript('main.js', true);
 });
 
+gulp.task('build', ['jekyll-build', 'images', 'sass', 'scripts']);
+
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['build', 'browser-sync', 'watch']);
