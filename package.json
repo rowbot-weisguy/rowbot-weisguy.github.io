@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/rowbot-weisguy/rowbot-weisguy.github.io/issues"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babelify": "6.4.0",
+    "browser-sync": "^1.3.7",
+    "browserify": "^13.0.0",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-util": "^3.0.7",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
 }

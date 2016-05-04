@@ -1,0 +1,13 @@
+# Info
+name: Rowan Weismiller
+email: rowan.weismiller@gmail.com
+twitter: rowbot_weisguy
+github: rowbot-weisguy
+
+# Build
+markdown: redcarpet
+highlighter: pygments # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+source: _src
+destination: _public
+permalink: /blog/:title/

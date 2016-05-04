@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+.page {
+    height: 100%;
+
+    @include tallest(500px) {
+        height: auto;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    background-color: $white;
+}
