@@ -1,8 +1,9 @@
 # Info
-name: Rowan Weismiller
-email: rowan.weismiller@gmail.com
-twitter: rowbot_weisguy
-github: rowbot-weisguy
+author:
+  name: Rowan Weismiller
+  email: rowan.weismiller@gmail.com
+  twitter: rowbot_weisguy
+  github: rowbot-weisguy
 
 # Build
 markdown: redcarpet
