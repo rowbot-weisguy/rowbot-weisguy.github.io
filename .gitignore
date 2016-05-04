@@ -12,3 +12,4 @@
 *.pid
 
 node_modules
+_public
