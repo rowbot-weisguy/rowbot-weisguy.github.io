@@ -18,13 +18,11 @@ var basePaths = {
 var paths = {
     styles: {
         src: basePaths.src + '_scss/',
-        dest: basePaths.src + 'css/',
-        directDest: basePaths.dest + 'css/'
+        dest: basePaths.dest + 'css/',
     },
     scripts: {
         src: basePaths.src + '_scripts/',
-        dest: basePaths.src + 'js/',
-        directDest: basePaths.dest + 'js/'
+        dest: basePaths.dest + 'js/',
     }
 };
 
@@ -75,9 +73,8 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest(paths.styles.directDest))
+        .pipe(gulp.dest(paths.styles.dest))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest(paths.styles.dest));
 });
 
 gulp.task('scripts', function() {
@@ -110,9 +107,8 @@ function buildScript(file, watch) {
     return stream
       .on('error', handleErrors)
       .pipe(source(file))
-      .pipe(gulp.dest(paths.scripts.directDest))
-      .pipe(browserSync.reload({stream:true}))
       .pipe(gulp.dest(paths.scripts.dest))
+      .pipe(browserSync.reload({stream:true}))
   }
 
   // listen for an update and run rebundle
