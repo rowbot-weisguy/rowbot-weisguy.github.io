@@ -27,12 +27,14 @@ body {
     background-color: $gray-lightest;
 }
 
-a,
-.link {
+a {
+    display: inline-block;
     color: $link-color;
     text-decoration: none;
+    transition: color 0.3s ease-in;
 
     &:hover {
+        transition: color 0.1s ease-out;
         color: $link-color-hover;
     }
 }

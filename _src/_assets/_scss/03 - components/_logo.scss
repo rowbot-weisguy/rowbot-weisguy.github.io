@@ -40,6 +40,8 @@
 
     // Hover State
     &:hover {
+        color: $white;
+
         &:before,
         &:after {
             border-radius: 0;
