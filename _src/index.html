@@ -10,28 +10,35 @@ title: Rowan | Designer & Developer
 
 <div class="two-up">
     <div class="two-up__column">
-        <h3>Featured Articles</h3>
+        <h2>Recent Articles</h2>
         <ul class="posts">
             {% for post in site.posts %}
                 <li class="post">
                     <a class="card" href="{{ post.url }}">
-                        <span>{{ post.date | date_to_string }}</span> &raquo; <span class="link">{{ post.title }}</span>
+                        <div class="card__emoji">
+                            {{ post.emoji }}
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__title">{{ post.title }}</h3>
+                            <span class="card__subtitle">{{ post.date | date_to_string }}</span>
+                        </div>
                     </a>
                 </li>
             {% endfor %}
         </ul>
     </div>
     <div class="two-up__column">
-        <h3>Featured Work</h3>
+        <h2>Some Projects</h2>
         <ul class="posts">
             {% for post in site.posts %}
                 <li class="post">
                     <a class="card" href="{{ post.url }}">
-                        <div class="card__image">
-                            <img src="//placekitten.com/100/100"/>
+                        <div class="card__emoji">
+                            {{ post.emoji }}
                         </div>
                         <div class="card__text">
-                            <span>{{ post.date | date_to_string }}</span> &raquo; <span class="link">{{ post.title }}</span>
+                            <h3 class="card__title">{{ post.title }}</h3>
+                            <span class="card__subtitle">{{ post.date | date_to_string }}</span>
                         </div>
                     </a>
                 </li>

@@ -85,8 +85,7 @@ gulp.task('scripts', function() {
  */
 gulp.task('browser-sync', function() {
     browserSync({
-        server: { baseDir: '_public' },
-        notify: false
+        server: { baseDir: '_public' }
     });
 });
 

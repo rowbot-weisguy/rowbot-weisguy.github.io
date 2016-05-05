@@ -2,6 +2,15 @@
     margin-bottom: 4rem;
 }
 
-.opening__title {}
+.opening__title {
+    margin-bottom: 0.5rem;
 
-.opening__subtitle {}
+    @include at-least($bp-large) {
+        font-size: 5rem;
+    }
+}
+
+.opening__subtitle {
+    max-width: 55rem;
+    font-size: 1.8rem;
+}
