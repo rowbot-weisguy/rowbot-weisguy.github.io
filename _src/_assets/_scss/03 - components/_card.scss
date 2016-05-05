@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: $white;
+    border: 1px solid $gray-lighter;
+    box-shadow: 1px 1px 0 0 rgba($black, 0.1);
+
+    &,
+    &:hover {
+        color: $gray-darker;
+    }
+}
+
+.card__image {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.card__text {}
+
+.card__title {}
+
+.card__description {}

@@ -1,0 +1,61 @@
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $logo-size-base;
+    height: $logo-size-base;
+    margin: 0;
+    color: $white;
+    font-size: $logo-size-base / 2;
+    font-weight: 600;
+
+    @include at-least($bp-layout) {
+        margin: 4rem auto;
+        height: $logo-size-base * 2;
+        width: $logo-size-base * 2;
+        font-size: $logo-size-base;
+    }
+
+    // Overlapping Circles
+    &:before,
+    &:after {
+        @include cover-parent;
+        content: "";
+        z-index: 1;
+        border-radius: 50%;
+        transition: transform 0.2s ease-out,
+                    border-radius 0.2s ease-out;
+    }
+    &:before {
+        transform: translate(-$logo-offset, -$logo-offset);
+        background-color: rgba($logo-color-1, 1);
+        mix-blend-mode: multiply;
+    }
+    &:after {
+        transform: translate($logo-offset, $logo-offset);
+        background-color: rgba($logo-color-2, 1);
+        mix-blend-mode: multiply;
+    }
+
+    // Hover State
+    &:hover {
+        &:before,
+        &:after {
+            border-radius: 0;
+        }
+        &:before {
+            transform: translate($logo-offset, $logo-offset) ;
+        }
+        &:after {
+            transform: translate(-$logo-offset, -$logo-offset);
+        }
+    }
+}
+
+.logo__initial {
+    position: relative;
+    z-index: 2;
+    display: block;
+    vertical-align: middle;
+}

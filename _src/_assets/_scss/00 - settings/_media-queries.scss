@@ -12,7 +12,6 @@
     @media only screen and (max-width: $query) {
         @content;
     }
-
 }
 
 @mixin between($min, $max) {
@@ -31,5 +30,4 @@
     @media only screen and (max-height: $query) {
         @content;
     }
-
 }

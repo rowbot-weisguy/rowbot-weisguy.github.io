@@ -1,11 +1,20 @@
-<header class="header">
-    <h1 class="logo"><a href="/">{{ site.author.name }}</a></h1>
+<header class="header layout__header">
+    <a href="/">
+        <div class="logo">
+            <span class="logo__initial" aria-hidden="true">{{ site.author.name | slice: 0 }}</span>
+            <span class="sr-only">{{ site.author.name }}</span>
+        </div>
+    </a>
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__item">
-                <a class="nav__link">
-                    {{ site | json }}
-                </a>
+                <a class="nav__link" href="/work/">Work</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="/blog/">Blog</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="/about/">About</a>
             </li>
         </ul>
     </nav>

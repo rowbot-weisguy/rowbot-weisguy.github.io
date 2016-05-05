@@ -1,0 +1,26 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+
+    @include at-least($bp-layout) {
+        flex-direction: row;
+    }
+}
+
+.layout__header {
+    padding: 1rem;
+
+    @include at-least($bp-layout) {
+        flex: 0 0 $sidebar-width;
+    }
+}
+
+.layout__content {
+    padding: 4rem 2rem;
+    flex-grow: 1;
+
+    @include at-least($bp-layout) {
+        padding: 8.25rem 4rem;
+        flex: 1 0 $sidebar-width;
+    }
+}

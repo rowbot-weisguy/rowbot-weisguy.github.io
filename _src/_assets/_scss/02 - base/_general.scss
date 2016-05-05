@@ -15,12 +15,35 @@ body,
 }
 
 html {
-    font-size: 62.5%;
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     margin: 0;
-    padding: 1rem;
-    background-color: $white;
+    padding: 0;
+    color: $gray-darker;
+    background-color: $gray-lightest;
+}
+
+a,
+.link {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }

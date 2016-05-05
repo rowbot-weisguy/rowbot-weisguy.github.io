@@ -1,0 +1,27 @@
+.nav {
+    position: relative;
+    left: 1rem;
+
+    @include at-least($bp-layout) {
+        left: auto;
+        text-align: center;
+    }
+}
+
+.nav__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav__item {
+    display: inline-block;
+    @include at-least($bp-layout) {
+        display: block;
+    }
+}
+
+.nav__link {
+    display: block;
+    padding: 1rem;
+}

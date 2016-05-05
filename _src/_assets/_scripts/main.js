@@ -1,1 +1,1 @@
-console.log('Hello world!');
+console.log('Look at you, checkin\' under the hood! We\'d probably get along great. Why don\'t you check out the source? Here: https://github.com/rowbot-weisguy/rowbot-weisguy.github.io');

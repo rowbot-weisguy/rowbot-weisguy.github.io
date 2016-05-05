@@ -1,13 +1,41 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Rowan | Designer & Developer
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="opening">
+    <h1 class="opening__title">{{ site.author.name }}</h1>
+    <p class="opening__subtitle">A designer, front-end developer, and <a href="//thenachoclub.com/">nacho critic</a> making internets in Vancouver, Canada.</p>
+</div>
+
+<div class="two-up">
+    <div class="two-up__column">
+        <h3>Featured Articles</h3>
+        <ul class="posts">
+            {% for post in site.posts %}
+                <li class="post">
+                    <a class="card" href="{{ post.url }}">
+                        <span>{{ post.date | date_to_string }}</span> &raquo; <span class="link">{{ post.title }}</span>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="two-up__column">
+        <h3>Featured Work</h3>
+        <ul class="posts">
+            {% for post in site.posts %}
+                <li class="post">
+                    <a class="card" href="{{ post.url }}">
+                        <div class="card__image">
+                            <img src="//placekitten.com/100/100"/>
+                        </div>
+                        <div class="card__text">
+                            <span>{{ post.date | date_to_string }}</span> &raquo; <span class="link">{{ post.title }}</span>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>

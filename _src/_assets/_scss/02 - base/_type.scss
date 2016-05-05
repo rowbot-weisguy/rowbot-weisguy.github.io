@@ -2,22 +2,59 @@
 // COMIC NEUE, YO
 // ==========================================================================
 
-@font-face {
-  font-family: 'Comic Neue';
-  src: url('fonts/ComicNeue-Regular.eot'); /* IE9 Compat Modes */
-  src: url('fonts/ComicNeue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/ComicNeue-Regular.woff') format('woff'), /* Modern Browsers */
-       url('fonts/ComicNeue-Regular.woff2') format('woff2'), /* Even Moderner Browsers */
-       url('fonts/ComicNeue-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-  font-weight: 300;
+$title-font-stack: "freight-big-pro", "Garamond", "Georgia", serif;
+$title-font-weight: 300;
+$body-font-stack: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$body-font-weight: 300;
+$body-font-weight-bold: 600;
+
+html {
+    font-size: 62.5%;
+    @include at-least($bp-medium) {
+        font-size: 75%;
+    }
+    @include at-least($bp-large) {
+        font-size: 87.5%;
+    }
 }
 
-@font-face {
-  font-family: 'Comic Neue';
-  src: url('fonts/ComicNeue-Bold.eot'); /* IE9 Compat Modes */
-  src: url('fonts/ComicNeue-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/ComicNeue-Bold.woff') format('woff'), /* Modern Browsers */
-       url('fonts/ComicNeue-Bold.woff2') format('woff2'), /* Even Moderner Browsers */
-       url('fonts/ComicNeue-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
-  font-weight: 700;
+body {
+    font-size: 1.8rem;
+    font-family: $body-font-stack;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $title-font-stack;
+    line-height: 1.1;
+}
+
+h5,
+h6 {
+    font-family: $body-font-stack;
+    font-weight: $body-font-weight-bold;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }

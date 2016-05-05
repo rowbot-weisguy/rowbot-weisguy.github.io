@@ -32,7 +32,7 @@ var paths = {
 };
 
 var appFiles = {
-    content: ['./_src/_layouts/*.html', './_src/_includes/*.html', './_src/_posts/*'],
+    content: './_src/**/*.html',
     images: paths.images.src + '*',
     styles: paths.styles.src + '**/*.scss',
     scripts: paths.scripts.src + '**/*.js'
@@ -69,8 +69,8 @@ gulp.task('sass', function () {
     return gulp.src(appFiles.styles)
         .pipe(sass({
             includePaths: ['scss'],
-            onError: browserSync.notify
         }))
+        .on('error', sass.logError)
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest(paths.styles.dest))
         .pipe(browserSync.reload({stream:true}))

@@ -1,0 +1,14 @@
+@include at-least($bp-small) {
+    .two-up {
+        display: flex;
+        flex-direction: row;
+        width: calc(100% + #{$gutter-width});
+        margin-left: -$gutter-width / 2
+    }
+
+    .two-up__column {
+        width: 50%;
+        padding-left: $gutter-width / 2;
+        padding-right: $gutter-width / 2;
+    }
+}
