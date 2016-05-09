@@ -22,7 +22,7 @@
 
     @include at-least($bp-layout) {
         overflow-y: scroll;
-        padding: 8.25rem 4rem 0;
+        padding: 6.75rem 4rem 0;
         flex: 1 0 $sidebar-width;
     }
 }

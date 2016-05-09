@@ -1,0 +1,12 @@
+.content {}
+
+.content__wrapper {
+    @include at-least($bp-large) {
+        max-width: 60rem;
+    }
+}
+
+.content__main {
+    padding-bottom: 4rem;
+}
+

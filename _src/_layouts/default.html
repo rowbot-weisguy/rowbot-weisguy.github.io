@@ -4,8 +4,12 @@
     <body class="layout">
         {% include header.html %}
         <div class="content layout__content">
-            {{ content }}
-            {% include footer.html %}
+            <div class="content__wrapper">
+                <main class="content__main">
+                    {{ content }}
+                </main>
+                {% include footer.html %}
+            </div>
         </div>
         {% include scripts.html %}
     </body>

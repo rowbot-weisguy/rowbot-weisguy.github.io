@@ -29,11 +29,14 @@
 }
 
 .card__emoji {
+    flex-grow: 0;
     margin-right: 1rem;
     font-size: 3rem;
 }
 
-.card__text {}
+.card__text {
+    flex-grow: 1;
+}
 
 .card__title {
     margin-bottom: 0;
@@ -44,6 +47,7 @@
 }
 
 .card__subtitle {
+    display: block;
     color: $gray-accessible;
     font-size: 1.4rem;
 }
