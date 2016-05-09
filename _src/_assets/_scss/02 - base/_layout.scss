@@ -17,12 +17,10 @@
 }
 
 .layout__content {
-    padding: 4rem 2rem 0;
     flex-grow: 1;
 
     @include at-least($bp-layout) {
         overflow-y: scroll;
-        padding: 6.75rem 4rem 0;
         flex: 1 0 $sidebar-width;
     }
 }

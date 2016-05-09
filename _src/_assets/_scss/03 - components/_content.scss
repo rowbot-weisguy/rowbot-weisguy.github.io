@@ -1,4 +1,10 @@
-.content {}
+.content {
+    padding: 4rem 2rem 0;
+
+    @include at-least($bp-layout) {
+        padding: 6.75rem 4rem 0;
+    }
+}
 
 .content__wrapper {
     @include at-least($bp-large) {
@@ -8,5 +14,6 @@
 
 .content__main {
     padding-bottom: 4rem;
+    max-width: 44rem;
 }
 

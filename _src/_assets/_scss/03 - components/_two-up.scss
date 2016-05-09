@@ -2,6 +2,7 @@
     .two-up {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         max-width: 72rem;
         width: calc(100% + #{$gutter-width});
         margin-left: -$gutter-width / 2

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rowan | Designer & Developer
+title: Rowan Weismiller | Designer & Developer
 ---
 
 <div class="opening">
