@@ -32,7 +32,7 @@ var paths = {
 };
 
 var appFiles = {
-    content: './_src/**/*.html',
+    content: ['./_src/**/*.html', './_src/**/*.md'],
     images: paths.images.src + '*',
     styles: paths.styles.src + '**/*.scss',
     scripts: paths.scripts.src + '**/*.js'
