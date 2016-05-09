@@ -5,7 +5,7 @@ title: About Rowan Weismiller | Designer & Developer
 
 # About Rowan
 
-👋 Hello! I'm Rowan from Vancouver, Canada.
+Hello! I'm Rowan from Vancouver, Canada. 👋
 
 I love the web. It&rsquo;s the open platform that has connected me with countless
 people and ideas. Its potential gets me excited every day! I am here to help
@@ -17,17 +17,17 @@ make it even better by:
 
 ## Background
 
-I studied [interaction design][siat] at SFU, worked at [Mobify][mobify] for just
+I studied [interaction design][siat] at SFU, worked at [Mobify][mobify] for
 over 2 years in an interdisciplinary marketing team, then left to work as a
-contractor helping clients make sure their designs got executed awesomely when
-they go to the front-end dev stage.
+contractor. Now I help clients make sure their designs got executed awesomely when
+they get to the front-end dev stage.
 
 ## Community
 
 Find me in the Vancouver design &amp; development community helping organize the
 bi-monthly [Style & Class][style-class] meetup as well as the yearly
-[SIAT Design Jam][design-jam]. I also speak publicly about design, development
-and team processes.
+[SIAT Design Jam][design-jam]. I speak publicly, too, but I don&rsquo;t have any
+videos to share with you. 😩
 
 Of course, I also help run [The Nacho Club][nacho-club], where we review
 the nachos of Vancouver. [The Mexican][the-mexican] is currently the highest rated.

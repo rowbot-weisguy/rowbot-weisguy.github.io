@@ -6,14 +6,11 @@
     }
 }
 
-.content__wrapper {
-    @include at-least($bp-large) {
-        max-width: 60rem;
-    }
-}
-
 .content__main {
     padding-bottom: 4rem;
-    max-width: 44rem;
+
+    @include at-least($bp-large) {
+        max-width: 50rem;
+    }
 }
 
