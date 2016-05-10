@@ -6,8 +6,8 @@ categories:
 emoji: 🤓
 ---
 
-If you are a beginner to intermediate programmer like me, you&rsquo;ve got to
-check out the [funfunfunction][fun-fun-function] YouTube channel.
+If you are kind of a n00b programmer like me, you&rsquo;ve got to check out the
+[funfunfunction][fun-fun-function] YouTube channel.
 
 **Protip: watch his videos in order!** The videos will make the most sense when
 you watch them sequentially.
