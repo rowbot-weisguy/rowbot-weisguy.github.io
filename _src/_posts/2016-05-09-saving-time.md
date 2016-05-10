@@ -26,10 +26,9 @@ That&rsquo;s what got me excited. The idea of creating new time for people to
 focus on the things that are most important to them, where they can contribute
 the most possible unique value to the world.
 
-Everyone everywhere is suffering through some kind of drudge work. There are so
-many tasks that can be automated or made to be more efficient. We&rsquo;re in
-front of a large wave of new products and services that will automate so many
-drudge tasks.
+Right now we&rsquo;re standing in front of a giant wave of new products and
+services that will automate so many drudge tasks. It&rsquo;s going to enable so
+many new civic and social participants.
 
 Awesome!
 
