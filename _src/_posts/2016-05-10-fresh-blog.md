@@ -27,7 +27,7 @@ the outset of this thing.
 Oh, and I&rsquo;ll add some short case studies on the work I&rsquo;ve done in
 the past couple years. I&rsquo;ve been a bit lazy about that. 🙈
 
-And I may have to reinvent the party button, somehow. It&rsquo;s missing for now. 😢
+Shit... I may have to reinvent the party button, too. It&rsquo;s missing for now. 😢
 
 If I could ask one thing of you: please share back. I put comments on this site
 so that if what I write reminds you of something, you can share it here too.
