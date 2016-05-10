@@ -24,16 +24,15 @@
         content: "";
         z-index: 1;
         border-radius: 50%;
-        transition: transform 0.2s ease-out,
-                    border-radius 0.2s ease-out;
+        transition: transform 0.2s ease-in;
     }
     &:before {
-        transform: translate(-$logo-offset, -$logo-offset);
+        transform: translate(-$logo-offset * 2, -$logo-offset * 2);
         background-color: rgba($logo-color-1, 1);
         mix-blend-mode: multiply;
     }
     &:after {
-        transform: translate($logo-offset, $logo-offset);
+        transform: translate($logo-offset * 2, $logo-offset * 2);
         background-color: rgba($logo-color-2, 1);
         mix-blend-mode: multiply;
     }
@@ -44,13 +43,13 @@
 
         &:before,
         &:after {
-            // border-radius: 0;
+            transition: transform 0.1s ease-out;
         }
         &:before {
-            transform: translate($logo-offset, $logo-offset) ;
+            transform: translate($logo-offset * 0.5, $logo-offset * 0.5);
         }
         &:after {
-            transform: translate(-$logo-offset, -$logo-offset);
+            transform: translate(-$logo-offset * 0.5, -$logo-offset * 0.5);
         }
     }
 }
