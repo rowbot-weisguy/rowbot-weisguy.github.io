@@ -2,11 +2,21 @@
 // COMIC NEUE, YO
 // ==========================================================================
 
-$title-font-stack: "freight-big-pro", 'Bodoni MT', Didot, "Didot LT Std",  Garamond, Georgia, serif;
-$title-font-weight: 300;
-$body-font-stack: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$body-font-weight: 300;
-$body-font-weight-bold: 600;
+%header-font {
+    font-family: "freight-big-pro", 'Bodoni MT', Didot, "Didot LT Std",  Garamond, Georgia, serif;
+    font-weight: 300;
+}
+
+%body-font {
+    font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+%quote-font {
+    font-family: "freight-text-pro",  Garamond, Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+}
 
 html {
     font-size: 62.5%;
@@ -22,8 +32,8 @@ html {
 }
 
 body {
+    @extend %body-font;
     font-size: 1.8rem;
-    font-family: $body-font-stack;
 }
 
 
@@ -44,7 +54,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: $title-font-stack;
+    @extend %header-font;
     line-height: 1.1;
 }
 
@@ -58,8 +68,8 @@ h6 {
 
 h5,
 h6 {
-    font-family: $body-font-stack;
-    font-weight: $body-font-weight-bold;
+    @extend %body-font;
+    font-weight: 600;
 }
 
 h1 {
@@ -90,13 +100,34 @@ p,
 li {
     font-size: 1.6rem;
     line-height: 1.4;
-    margin-bottom: 0.65rem;
+    margin-bottom: 1rem;
+
+    strong {
+        font-weight: 600;
+    }
+
+    em {
+        font-style: italic;
+    }
 }
 
 ul {
     padding-left: 2rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+blockquote {
+    margin: 3rem 0;
+    padding-left: 2rem;
+    border-left: 0.5rem solid $color-primary;
+
+    p {
+        @extend %quote-font;
+        font-size: 2.4rem;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
 }
 
 .lead {

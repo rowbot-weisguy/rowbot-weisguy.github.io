@@ -9,19 +9,23 @@ emoji: 🤓
 If you are a beginner to intermediate programmer like me, you&rsquo;ve got to
 check out the [funfunfunction][fun-fun-function] YouTube channel.
 
-Here&rsquo;s one of my favourite videos:
+**Protip: watch his videos in order!** The videos will make the most sense when
+you watch them sequentially.
+
+I love how he breaks down the underlying principles that power a lot of modern
+JavaScript libraries and frameworks. If you don&rsquo;t have a rigorous
+computer science background, this sort of thing is very useful.
+
+Here&rsquo;s one of my favourites:
 <div class="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OnCeaJdd_sY" frameborder="0" allowfullscreen></iframe>
 </div>
 
-**Protip: watch it from the beginning!** His videos make the most sense
-when you watch them sequentially.
+> Great software is built by great teams, not great developers.
 
-I love how he breaks down the underlying principles that powers a lot of modern
-JavaScript libraries and frameworks right now. I didn't go deep on computer
-science during my education, so this kind of content is _huge_ for me.
+What a guy!
 
-On that note, if you have any recommendations you can throw out there for
-these kinds of resources, please let me know in the comments below. 👇
+If you have any recommendations for resources like this one, I&rsquo;m itching
+to learn more. Please post it in the comments below. 👇
 
 [fun-fun-function]: //www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q
