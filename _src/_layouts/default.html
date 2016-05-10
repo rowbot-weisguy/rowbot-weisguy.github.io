@@ -3,14 +3,13 @@
     {% include head.html %}
     <body class="layout">
         {% include header.html %}
-        <div class="content layout__content">
-            <div class="content__wrapper">
-                <main class="content__main">
-                    {{ content }}
-                </main>
-                {% include footer.html %}
-            </div>
-        </div>
+        <main class="content layout__content">
+            {% include hero.html %}
+            <article class="main {% if page.hero %}main--hero{% endif %}">
+                {{ content }}
+            </article>
+            {% include footer.html %}
+        </main>
         {% include scripts.html %}
     </body>
 </html>

@@ -1,0 +1,24 @@
+.main {
+    position: relative;
+    padding: 4rem 2rem;
+
+    @include at-least($bp-layout) {
+        padding-top: 6.75rem;
+        padding-bottom: 6.75rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        max-width: 60rem;
+    }
+
+    &--hero {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        @include at-least($bp-largest) {
+            position: relative;
+            padding: 4rem 4rem;
+            margin-top: -$post-overlap;
+            background-color: $gray-lightest;
+        }
+    }
+}

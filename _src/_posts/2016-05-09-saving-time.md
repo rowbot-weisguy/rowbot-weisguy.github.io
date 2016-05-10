@@ -1,0 +1,57 @@
+---
+layout: post
+title: "Saving Time"
+date:  2016-05-09 16:34:20
+categories: career, goals
+hero: //placekitten.com/1600/800
+hero_caption: A small kitten peers out into the crowded plaza, hoping things will be better tomorrow.
+emoji: 💁
+show_author: true
+---
+
+Hello! I'm Rowan from Vancouver, Canada. 👋
+
+I love the web. It&rsquo;s the open platform that has connected me with countless
+people and ideas. Its potential gets me excited every day! I am here to help
+make it even better by:
+
+1. Delivering exceptional user experiences
+2. Learning the possibilities and constraints of web technologies
+3. Tearing down as many barriers between 1 and 2 as I can
+
+## Background
+
+I studied [interaction design][siat] at SFU, worked at [Mobify][mobify] for
+over 2 years in an interdisciplinary marketing team, then left to work as a
+contractor. Now I help clients make sure their designs got executed awesomely when
+they get to the front-end dev stage.
+
+## Community
+
+Find me in the Vancouver design &amp; development community helping organize the
+bi-monthly [Style & Class][style-class] meetup as well as the yearly
+[SIAT Design Jam][design-jam]. I speak publicly, too, but I don&rsquo;t have any
+videos to share with you. 😩
+
+Of course, I also help run [The Nacho Club][nacho-club], where we review
+the nachos of Vancouver. [The Mexican][the-mexican] is currently the highest rated.
+
+## Right Now
+
+- Seeking a full time position as a front-end developer 🤓
+- Leveling up my JavaScript skillz 💯
+- Organizing [Style & Class][style-class]&rsquo;s upcoming event 👀
+- Redesigning my personal site 🤘
+- Redesigning The Nacho Club site 🔑
+
+If you&rsquo;re looking for a designy front-end developer for your product, you
+can find me around the internets.
+
+👇
+
+[siat]: //siat.sfu.ca/
+[mobify]: //www.mobify.com/
+[style-class]: //styleandclass.ca/
+[design-jam]: //siatjam.ca/
+[nacho-club]: //thenachoclub.com/
+[the-mexican]: //themexican.ca/

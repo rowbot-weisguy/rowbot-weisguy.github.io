@@ -1,0 +1,35 @@
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 4rem 0;
+}
+
+.author__avatar {
+    width: 7rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.author__text {
+    flex-grow: 1;
+    color: $gray-dark;
+}
+
+.author__subtext,
+.author__name,
+.author__bio {
+    margin-bottom: 0;
+}
+
+.author__subtext {
+    color: $gray-accessible;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.author__name {
+    font-weight: 600;
+}
+
+.author__bio {}

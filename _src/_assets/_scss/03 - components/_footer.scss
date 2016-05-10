@@ -1,18 +1,22 @@
 .footer {
-    padding-top: 4rem;
+    padding: 4rem 2rem 4rem;
     border-top: 1px solid $gray-lighter;
+
+    @include at-least($bp-layout) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+.footer__header {
+    margin-top: 0;
 }
 
 .footer__message {
-    margin: 4rem 0 4rem;
     color: $gray-accessible;
     font-size: 1.2rem;
 }
 
-.footer__actions {
-
-}
-
-.footer__social {
-
+.footer__links {
+    margin-bottom: 4rem;
 }
