@@ -3,55 +3,34 @@ layout: post
 title: "Saving Time"
 date:  2016-05-09 16:34:20
 categories: career, goals
-hero: //placekitten.com/1600/800
-hero_caption: A small kitten peers out into the crowded plaza, hoping things will be better tomorrow.
+hero: /assets/images/triangle-kitchen.jpg
 emoji: 💁
 show_author: true
 ---
 
-Hello! I'm Rowan from Vancouver, Canada. 👋
+Bill and Melinda gates write an open letter every year about what major problems
+they want to work on solving. [This year&rsquo;s letter][gates-letter] truly
+inspired me! They wrote it from the perspective of which super power they wish
+they had that they could share with others. I loved Melinda&rsquo;s section
+about _time_.
 
-I love the web. It&rsquo;s the open platform that has connected me with countless
-people and ideas. Its potential gets me excited every day! I am here to help
-make it even better by:
+She writes about the unequal distribution of time spent on unpaid work and how
+it perpetuates gender inequality _everywhere_ in the world. Then she shows how
+the triangle kitchen design drastically reduced the number of steps required in
+the kitchen for a person to bake a cake (as an example).
 
-1. Delivering exceptional user experiences
-2. Learning the possibilities and constraints of web technologies
-3. Tearing down as many barriers between 1 and 2 as I can
+The result of this design was that it created _new_ time for women to participate
+in social and civic discourse.
 
-## Background
+That&rsquo;s what got me excited. The idea of creating new time for people to
+focus on the things that are most important to them, where they can contribute
+the most possible unique value to the world.
 
-I studied [interaction design][siat] at SFU, worked at [Mobify][mobify] for
-over 2 years in an interdisciplinary marketing team, then left to work as a
-contractor. Now I help clients make sure their designs got executed awesomely when
-they get to the front-end dev stage.
+Everyone everywhere is suffering through some kind of drudge work. There are so
+many tasks that can be automated or made to be more efficient. We&rsquo;re in
+front of a large wave of new products and services that will automate so many
+drudge tasks.
 
-## Community
+Awesome!
 
-Find me in the Vancouver design &amp; development community helping organize the
-bi-monthly [Style & Class][style-class] meetup as well as the yearly
-[SIAT Design Jam][design-jam]. I speak publicly, too, but I don&rsquo;t have any
-videos to share with you. 😩
-
-Of course, I also help run [The Nacho Club][nacho-club], where we review
-the nachos of Vancouver. [The Mexican][the-mexican] is currently the highest rated.
-
-## Right Now
-
-- Seeking a full time position as a front-end developer 🤓
-- Leveling up my JavaScript skillz 💯
-- Organizing [Style & Class][style-class]&rsquo;s upcoming event 👀
-- Redesigning my personal site 🤘
-- Redesigning The Nacho Club site 🔑
-
-If you&rsquo;re looking for a designy front-end developer for your product, you
-can find me around the internets.
-
-👇
-
-[siat]: //siat.sfu.ca/
-[mobify]: //www.mobify.com/
-[style-class]: //styleandclass.ca/
-[design-jam]: //siatjam.ca/
-[nacho-club]: //thenachoclub.com/
-[the-mexican]: //themexican.ca/
+[gates-letter]: //www.gatesnotes.com/2016-Annual-Letter?WT.mc_id=02_22_2016_00_AL2016_GL-GN_&WT.tsrc=GLGN
