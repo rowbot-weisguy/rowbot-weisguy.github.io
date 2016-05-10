@@ -29,7 +29,7 @@ the past couple years. I&rsquo;ve been a bit lazy about that. 🙈
 
 Shit... I may have to reinvent the party button, too. It&rsquo;s missing for now. 😢
 
-If I could ask one thing of you: please share back. I put comments on this site
-so that if what I write reminds you of something, you can share it here too.
+If something I write reminds you of something, feel free to share it in the
+comments! That&rsquo;s what I put them there for.
 
 Anyway, hope you&rsquo;re having a good day! See you around.
