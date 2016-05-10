@@ -15,3 +15,9 @@
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
+
+.opening__meta {
+    @extend %quote-font;
+    color: $gray-accessible;
+    font-size: 1.4rem;
+}
