@@ -24,7 +24,7 @@ in social and civic discourse.
 
 That&rsquo;s what got me excited. The idea of creating new time for people to
 focus on the things that are most important to them, where they can contribute
-the most possible unique value to the world.
+the most possible value to their communities.
 
 Right now we&rsquo;re standing in front of a giant wave of new products and
 services that will automate so many drudge tasks. It&rsquo;s going to enable so
