@@ -59,3 +59,5 @@ some text to be syntax highlighted....
 
 ![alt text](/path/to/img.jpg "Title")
 DELIM
+
+subl $fileName
