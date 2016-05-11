@@ -7,10 +7,10 @@ title: About Rowan Weismiller | Designer & Developer
 
 Hello! I'm Rowan from Vancouver, Canada. 👋
 
-I love the web. It&rsquo;s the open platform that has connected me with countless
+I love the web. It's the open platform that has connected me with countless
 people and ideas. Its potential gets me excited every day!
 
-I&rsquo;m here to help make it even better by:
+I'm here to help make it even better by:
 
 1. Delivering exceptional user experiences
 2. Learning the possibilities and constraints of web technologies
@@ -27,7 +27,7 @@ they get to the front-end dev stage.
 
 Find me in the Vancouver design &amp; development community helping organize the
 bi-monthly [Style & Class][style-class] meetup as well as the yearly
-[SIAT Design Jam][design-jam]. I speak publicly, too, but I don&rsquo;t have any
+[SIAT Design Jam][design-jam]. I speak publicly, too, but I don't have any
 videos to share with you. 😩
 
 I also help run [The Nacho Club][nacho-club], where we review the nachos of
@@ -37,11 +37,11 @@ Vancouver. [The Mexican][the-mexican] is currently our highest rated spot.
 
 - Seeking a full time position as a front-end developer 🤓
 - Leveling up my [JavaScript skillz][js-project] 💯
-- Organizing [Style & Class][style-class]&rsquo;s upcoming event 👀
-- Writing for and improving my personal site (the one you&rsquo;re looking at) 🤘
+- Organizing [Style & Class][style-class]'s upcoming event 👀
+- Writing for and improving my personal site (the one you're looking at) 🤘
 - Redesigning [The Nacho Club][nacho-club] site 🔑
 
-If you&rsquo;re looking for a designy front-end developer for your product, you
+If you're looking for a designy front-end developer for your product, you
 can find me around the internets.
 
 👇

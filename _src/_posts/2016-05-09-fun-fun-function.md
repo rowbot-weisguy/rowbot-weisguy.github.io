@@ -6,17 +6,17 @@ categories:
 emoji: 🤓
 ---
 
-If you are kind of a n00b programmer like me, you&rsquo;ve got to check out the
+If you are kind of a n00b programmer like me, you've got to check out the
 [funfunfunction][fun-fun-function] YouTube channel.
 
 **Protip: watch his videos in order!** The videos will make the most sense when
 you watch them sequentially.
 
 I love how he breaks down the underlying principles that power a lot of modern
-JavaScript libraries and frameworks. If you don&rsquo;t have a rigorous
+JavaScript libraries and frameworks. If you don't have a rigorous
 computer science background, this sort of thing is very useful.
 
-Here&rsquo;s one of my favourites:
+Here's one of my favourites:
 <div class="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OnCeaJdd_sY" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -25,7 +25,7 @@ Here&rsquo;s one of my favourites:
 
 What a guy!
 
-If you have any recommendations for resources like this one, I&rsquo;m itching
+If you have any recommendations for resources like this one, I'm itching
 to learn more. Please post it in the comments below. 👇
 
 [fun-fun-function]: //www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q
