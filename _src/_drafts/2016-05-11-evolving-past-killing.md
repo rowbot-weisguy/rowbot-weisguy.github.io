@@ -33,7 +33,7 @@ I'm making light of it because I hate thinking of how _fucked up_ some of the
 videos I've seen are. Eugh_.
 
 If you're curious about how to participate in this movement, I have one simple
-rule that I follow: don't buy food that was once an animal.
+rule that I follow: **I don't buy food that was once an animal**.
 
 I hesitate to call myself a true vegetarian for this reason, but I eat (for now)
 a 99% vegetarian diet.

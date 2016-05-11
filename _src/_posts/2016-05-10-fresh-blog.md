@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fresh Blog"
+title: "Fresh blog"
 date:  2016-05-10 11:57:52
 categories:
 emoji: 🖊

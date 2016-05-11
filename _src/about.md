@@ -35,14 +35,12 @@ Vancouver. [The Mexican][the-mexican] is currently our highest rated spot.
 
 ## Right Now
 
-- Seeking a full time position as a front-end developer 🤓
 - Leveling up my [JavaScript skillz][js-project] 💯
 - Organizing [Style & Class][style-class]'s upcoming event 👀
 - Writing for and improving my personal site (the one you're looking at) 🤘
 - Redesigning [The Nacho Club][nacho-club] site 🔑
 
-If you're looking for a designy front-end developer for your product, you
-can find me around the internets.
+And of course, if you want, you can find me around the internets.
 
 👇
 

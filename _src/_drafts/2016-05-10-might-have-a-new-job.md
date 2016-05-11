@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Might Have a New Job"
+title: "New job?"
 date:  2016-05-10 17:17:05
 categories:
 ---

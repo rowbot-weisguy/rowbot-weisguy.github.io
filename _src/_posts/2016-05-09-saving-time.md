@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Saving Time"
+title: "Saving time"
 date:  2016-05-09 16:34:20
 categories: career, goals
 hero: /assets/images/triangle-kitchen.jpg
