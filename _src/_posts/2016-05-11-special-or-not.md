@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Why not be special?"
-date:  2016-05-11 04:55:15
+date:  2016-05-11 04:55:15 PDT
 emoji: ⭐️️
-categories:
+categories: personal, thoughts
+show_author: true
 ---
 
 That might seem like a presumptious title. But is it really? In my experience

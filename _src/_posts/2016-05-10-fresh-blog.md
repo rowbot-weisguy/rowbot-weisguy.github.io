@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Fresh blog"
-date:  2016-05-10 11:57:52
-categories:
+date:  2016-05-10 11:57:52 PDT
+categories: personal
 emoji: 🖊
+show_author: true
 ---
 
 Do you smell that?

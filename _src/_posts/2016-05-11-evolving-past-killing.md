@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Evolving past killing"
-date:  2016-05-11 06:20:23
+date:  2016-05-11 06:20:23 PDT
 emoji: 🐮
-categories:
+categories: food, personal
+show_author: true
 ---
 
 I'm excited about the future of food. There are a [bunch][impossible-foods] of

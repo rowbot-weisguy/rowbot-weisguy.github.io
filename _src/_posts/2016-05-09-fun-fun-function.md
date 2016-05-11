@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Fun Fun Function"
-date:  2016-05-09 21:26:26
-categories:
+date:  2016-05-09 21:26:26 PDT
+categories: coding
 emoji: 🤓
+show_author: true
 ---
 
 If you're a programmer, you've got to check out [this YouTube channel][fun-fun-function].

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Saving time"
-date:  2016-05-09 16:34:20
-categories: career, goals
+date:  2016-05-09 16:34:20 PDT
+categories: thoughts
 hero: /assets/images/triangle-kitchen.jpg
 emoji: 💁
 show_author: true
