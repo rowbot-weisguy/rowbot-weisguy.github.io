@@ -5,15 +5,13 @@ date:  2016-05-11 06:20:23 PDT
 emoji: 🐮
 categories: food, personal
 show_author: true
+hidden: true
 ---
 
 I'm excited about the future of food. There are a [bunch][impossible-foods] of
 [smart][beyond-meat] [people][gates-future-food] [thinking][mosa-meat]
 [hard][memphis-meats] about how we can make meat production a more efficient
 process.
-
-> Livestock is an outdated technology
-> — Patrick Brown
 
 These companies tend to view meat the same way I do: as a product that is made
 by converting water and plant protein into animal proteins. If we're talking
@@ -28,12 +26,15 @@ Although animals have served as great culinary inspiration for us, I think by no
 we can agree that they suck at turning land, food, and water
 ([which is already scarce][water-scarcity]) into meat.
 
-Strangely enough, this makes me happy. This is good for animals and for us. We
-have incentive to stop killing animals while making better use of Earth's limited
-resources. We've pushed factory farming to its extremes, yet we're being forced
-to consider alternative production methods. This is necessary keep up with the
-growth in demand for meat as economies around the world strengthen and more
-people can afford meat.
+> Livestock is an outdated technology
+> — Patrick Brown
+
+This gets me stoked. It's good for both animals and for us. We have incentive to
+stop killing animals _and_ make better use of Earth's limited resources. We've
+pushed factory farming to its extremes, yet we're being forced to consider
+alternative production methods. This is necessary keep up with the growth in
+demand for meat as economies around the world strengthen and more people can
+afford meat.
 
 This is an example where constraints certainly help to inspire innovation.
 
