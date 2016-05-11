@@ -31,12 +31,12 @@ we can agree that they suck at turning land, food, and water
 
 This gets me stoked. It's good for both animals and for us. We have incentive to
 stop killing animals _and_ make better use of Earth's limited resources. We've
-pushed factory farming to its extremes, yet we're being forced to consider
-alternative production methods. This is necessary keep up with the growth in
-demand for meat as economies around the world strengthen and more people can
-afford meat.
+pushed factory farming to its extremes and proved it won't work. We're being
+forced to consider alternative production methods.
 
-This is an example where constraints certainly help to inspire innovation.
+This is necessary keep up with the growth in demand for meat as economies around
+the world strengthen and more people can afford meat. It's a great example of
+how constraints help to inspire innovation.
 
 I'm excited to start eating [cultured meat][memphis-meats], or products like the
 Beast Burger created by [Beyond Meat][beyond-meat-feature] (so cool, read about
