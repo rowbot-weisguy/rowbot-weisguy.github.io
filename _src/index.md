@@ -5,7 +5,7 @@ title: Rowan Weismiller | Designer & Developer
 
 <div class="opening">
     <h1 class="opening__title">{{ site.author.name }}</h1>
-    <p class="opening__subtitle">A designer, front-end developer, and <a class="link" href="//thenachoclub.com/">nacho critic</a> making internets in Vancouver, Canada.</p>
+    <p class="opening__subtitle">A designer, front-end developer, and nacho critic making internets in Vancouver, Canada. <a class="link" href="/about/">Read more →</a></p>
 </div>
 
 <h2>Recent Posts</h2>
@@ -18,7 +18,7 @@ title: Rowan Weismiller | Designer & Developer
                 </div>
                 <div class="card__text">
                     <h3 class="card__title">{{ post.title }}</h3>
-                    <span class="card__subtitle">{{ post.date | date_to_string }}</span>
+                    <span class="card__subtitle">{{ post.date | date_to_string}}</span>
                 </div>
             </a>
         </li>
