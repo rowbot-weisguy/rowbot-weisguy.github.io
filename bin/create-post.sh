@@ -16,8 +16,9 @@ cat > $fileName <<DELIM
 ---
 layout: post
 title: "$1"
-date:  `date "+%Y-%m-%d %H:%M:%S"`
+date:  `date "+%Y-%m-%d %H:%M:%S %Z"`
 emoji: 🔑
+show_author: true
 categories:
 ---
 [Basic syntax help for Markdown](http://daringfireball.net/projects/markdown/basics)
