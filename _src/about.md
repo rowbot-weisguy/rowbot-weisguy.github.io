@@ -8,7 +8,7 @@ title: About Rowan Weismiller | Designer & Developer
 Hello! I'm Rowan from Vancouver, Canada. 👋
 
 I love the web. It's the open platform that has connected me with countless
-people and ideas. Its potential gets me excited every day!
+people and ideas. Its potential gets me excited!
 
 I'm here to help make it even better by:
 
@@ -20,8 +20,8 @@ I'm here to help make it even better by:
 
 I studied [interaction design][siat] at SFU, worked at [Mobify][mobify] for
 over 2 years in an interdisciplinary marketing team, then left to work as a
-contractor. Now I help clients make sure their designs got executed awesomely when
-they get to the front-end dev stage.
+contractor. Now I help clients make sure their designs get executed awesomely
+when they get to the front-end dev stage.
 
 ## Community
 

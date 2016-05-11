@@ -131,6 +131,13 @@ blockquote {
     }
 }
 
+hr {
+    border-color: $gray-lighter;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    margin: 4rem 0;
+}
+
 .lead {
     font-size: 2rem;
     margin-bottom: 3rem;
