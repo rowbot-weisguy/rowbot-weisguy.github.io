@@ -6,11 +6,10 @@ categories:
 emoji: 🤓
 ---
 
-If you are kind of a n00b programmer like me, you've got to check out the
-[funfunfunction][fun-fun-function] YouTube channel.
+If you're a programmer, you've got to check out [this YouTube channel][fun-fun-function].
 
-**Protip: watch his videos in order!** The videos will make the most sense when
-you watch them sequentially.
+**Protip: watch his videos in order!** The videos make the most sense if you
+watch them sequentially.
 
 I love how he breaks down the underlying principles that power a lot of modern
 JavaScript libraries and frameworks. If you don't have a rigorous
@@ -26,6 +25,6 @@ Here's one of my favourites:
 What a guy!
 
 If you have any recommendations for resources like this one, I'm itching
-to learn more. Please post it in the comments below. 👇
+to learn more. Feel free to share in the comments below. 👇
 
 [fun-fun-function]: //www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q
