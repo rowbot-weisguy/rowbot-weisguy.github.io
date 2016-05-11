@@ -18,19 +18,17 @@ algorithm and I get to keep ownership. Perfect.
 
 The past few months I feel like I've just floated along on social media
 like a cloud. I felt sad using it because I felt anonymous most of the time. I
-never knew who I was reaching. Plus I never had any control.
+never knew who I was reaching. I didn't have any control.
 
-So I shrank for a while. 🍂
+So I shrank for a while and introspected. 🍂
 
-Time to grow, and to share ideas that nourish me. 🌳 That's my one promise at
-the outset of this thing.
+But now it's time to grow and share. 🌳
 
-Oh, and I'll add some short case studies on the work I've done in
-the past couple years. I've been a bit lazy about that. 🙈
+Sharing things as I go along is my one promise for this blog. Oh, and adding some
+short case studies on the work I've done in the past couple years. I've been a
+bit lazy about that. 🙈
 
 Shit... I may have to reinvent the party button, too. It's missing for now. 😢
 
-If something I write reminds you of something, feel free to share it in the
-comments! That's what I put them there for.
-
-Anyway, hope you're having a good day! See you around.
+Anyway, hope you're having a good day! If ever you feel inspired and have a thought
+or comment to share, I've got comments just for you. See you around.
