@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Evolving past killing"
-date:  2016-05-12 06:20:23 PDT
+date:  2016-05-14 06:20:23 PDT
 emoji: 🐮
 categories: food, personal
 show_author: true
