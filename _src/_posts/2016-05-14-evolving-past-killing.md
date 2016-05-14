@@ -37,8 +37,8 @@ incentive to stop killing animals _and_ make better use of Earth's limited resou
 We've pushed factory farming to its extremes and proved it won't work, so now we're
 forced to consider alternative production methods.
 
-This is necessary keep up with the growth in demand for meat as economies around
-the world strengthen and more people can afford meat. It's a great example of
+This is necessary to keep up with the growth in demand for meat as economies around
+the world strengthen. More people can afford meat. It's a great example of
 how constraints help to inspire innovation.
 
 I'm excited to start eating [cultured meat][memphis-meats], or products like the
