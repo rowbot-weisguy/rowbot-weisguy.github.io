@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Rowan Weismiller | Designer & Developer
+description: This is the blog and portfolio of Rowan Weismiller – a designer, front-end developer, and nacho critic making internets in Vancouver, Canada.
 ---
 
 <div class="opening">
