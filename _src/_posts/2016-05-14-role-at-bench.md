@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Good news everyone! I'm joining Bench!"
+title: "Good news everyone!"
 description: It feels weird being referred to as an 'engineer' since I don't have a computer science degree, but hey, that's what you can call me now.
 date:  2016-05-14 15:38:13 PDT
 emoji: 🛠
@@ -12,7 +12,7 @@ hero: /assets/images/good-news.png
 It feels a bit weird being referred to as an engineer since I don't have a
 computer science degree, but hey, that's what you can call me now.
 
-**I start at Bench on May 24th as a front-end software engineer!** 🎉
+**I start at [Bench][bench] on May 24th as a front-end software engineer!** 🎉
 
 I'm excited to start working with the team to take bookkeeping and accounting
 off the list of daily worries for entrepreneurs and small business owners across
@@ -28,3 +28,4 @@ contribute to the development of their businesses in more meaningful ways.
 Stoked!
 
 [saving-time]: /blog/saving-time/
+[bench]: //bench.co/
