@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Joining Bench!"
+title: "Good news everyone! I'm joining Bench!"
 description: It feels weird being referred to as an 'engineer' since I don't have a computer science degree, but hey, that's what you can call me now.
 date:  2016-05-14 15:38:13 PDT
 emoji: 🛠
