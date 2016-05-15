@@ -42,7 +42,7 @@ Vancouver. [The Mexican][the-mexican] is currently our highest rated spot.
 - Redesigning [The Nacho Club][nacho-club] site 🔑
 - Leveling up my [JavaScript skillz][js-project] 💯
 
-And of course, if you want, you can find me around the internets.
+And of course, you can find me around the internets.
 
 👇
 
