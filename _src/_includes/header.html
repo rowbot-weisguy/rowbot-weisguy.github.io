@@ -1,6 +1,8 @@
 <header class="header layout__header">
     <a href="/" class="logo">
         <span class="logo__initial" aria-hidden="true">{{ site.author.name | slice: 0 }}</span>
+        <span class="logo__effects" aria-hidden="true"></span>
+        <span class="logo__party" aria-hidden="true"><img src="/assets/images/rowan-party.gif"/></span>
         <span class="sr-only">{{ site.author.name }}</span>
     </a>
     <nav class="nav">
@@ -14,6 +16,6 @@
         </ul>
     </nav>
     <div class="header__actions">
-        <button class="button js-party-button">Start Party</button>
+        <button class="button js-party-button">Party</button>
     </div>
 </header>

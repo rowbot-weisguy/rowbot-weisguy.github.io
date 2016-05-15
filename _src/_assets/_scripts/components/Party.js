@@ -44,6 +44,8 @@ const Party = (function() {
                 document.body.classList.add(STATES.chill);
                 break;
         }
+
+        console.log('This party is ' + party);
     }
 
     function partyHandler(event) {

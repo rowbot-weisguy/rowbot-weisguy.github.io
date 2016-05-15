@@ -2,7 +2,7 @@
 // ANIMATIONS
 // ==========================================================================
 
-@keyframes shift-background {
+@keyframes rainbow-background {
     0% { background-color: #008080;}
     25% { background-color: #FF19C2; }
     50% { background-color: #00FFFF; }
@@ -10,7 +10,7 @@
     100% { background-color: #008080; }
 }
 
-@keyframes shift-foreground {
+@keyframes rainbow-foreground {
     0% { color: #008080;}
     25% { color: #FF19C2; }
     50% { color: #00FFFF; }

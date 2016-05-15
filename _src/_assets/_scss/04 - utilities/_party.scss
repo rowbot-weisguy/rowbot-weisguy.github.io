@@ -1,0 +1,34 @@
+.party {}
+
+.party.is-chill {}
+
+.party.is-lit {
+    a:not(.logo),
+    .card__title {
+        animation: 1s rainbow-foreground linear infinite;
+    }
+
+    // background-color: $gray-darker;
+    // color: $white;
+
+    button {
+        animation: 1s rainbow-background linear infinite;
+    }
+
+    .logo__effects {
+        &::before,
+        &::after {
+            mix-blend-mode: none;
+        }
+    }
+
+    .logo__initial {
+        display: none;
+    }
+
+    .logo__party {
+        display: block;
+    }
+}
+
+.party.is-raging {}
