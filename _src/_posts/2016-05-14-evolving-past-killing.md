@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Evolving past killing"
+description: I'm excited about the future of food because more people will be able to eat meat, yet we won't have to kill animals to do so.
 date:  2016-05-14 06:20:23 PDT
 emoji: 🐮
 categories: food, personal
 show_author: true
+hero: /assets/images/chickens.jpg
 ---
 
 I'm excited about the future of food. There are a bunch of [smart people][gates-future-food]
@@ -53,7 +55,7 @@ buy food that was once an animal**. I don't vote with my dollars for animals to
 be raised and slaughtered. I think it's a dated approach to meat production with
 negative impacts on our health and our environment.
 
-Besides, killing animals sounds pretty shitty.
+Besides, killing animals seems pretty shitty.
 
 What do you think?
 
