@@ -11,7 +11,7 @@
     font-weight: 600;
 
     @include at-least($bp-layout) {
-        margin: 4rem auto;
+        margin: 0 auto 4rem;
         height: $logo-size-base * 2;
         width: $logo-size-base * 2;
         font-size: $logo-size-base;

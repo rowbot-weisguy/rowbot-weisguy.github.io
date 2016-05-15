@@ -8,7 +8,6 @@
 }
 
 .layout__header {
-    padding: 1rem;
     flex: 0 0 6rem;
 
     @include at-least($bp-layout) {
