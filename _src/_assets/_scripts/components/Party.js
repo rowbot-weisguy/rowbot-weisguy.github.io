@@ -1,17 +1,11 @@
 import extend from 'lodash/fp/extend';
 
 const Party = (function() {
-    const HOOKS = {
-        button: '.js-party-button',
-        superButton: '.js-super-party-button'
-    };
-
     const STATES = {
         chill: 'is-chill',
         lit: 'is-lit',
         raging: 'is-raging'
     };
-
     let party = 'chill';
 
     function startParty() {
@@ -34,6 +28,8 @@ const Party = (function() {
             case 'lit':
                 document.body.classList.remove(STATES.chill, STATES.raging);
                 document.body.classList.add(STATES.lit);
+                Party.elements.music.play();
+                Party.elements.button.textContent = 'Chill';
                 break;
             case 'raging':
                 document.body.classList.remove(STATES.chill);
@@ -42,6 +38,9 @@ const Party = (function() {
             default:
                 document.body.classList.remove(STATES.lit, STATES.raging);
                 document.body.classList.add(STATES.chill);
+                Party.elements.music.pause();
+                Party.elements.music.currentTime = 0;
+                Party.elements.button.textContent = 'Party';
                 break;
         }
 
@@ -57,17 +56,18 @@ const Party = (function() {
     }
 
     return {
-        init: function(options) {
-            let config = extend({
-                button: document.querySelector(HOOKS.button),
-                superButton: document.querySelector(HOOKS.superButton)
-            }, options);
+        init: function(elements) {
+            Party.elements = extend({
+                button: document.querySelector('.js-party-button'),
+                superButton: document.querySelector('.js-super-party-button'),
+                music: document.querySelector('.js-party-music')
+            }, elements);
 
             document.body.classList.add('party', STATES.chill);
 
             try {
-                config.button.addEventListener('click', partyHandler);
-                config.superButton.addEventListener('click', superPartyHandler);
+                Party.elements.button.addEventListener('click', partyHandler);
+                Party.elements.superButton.addEventListener('click', superPartyHandler);
             } catch(e) {
                 console.error('Your page is missing party buttons!');
             }

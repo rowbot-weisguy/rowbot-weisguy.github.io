@@ -28,6 +28,10 @@ var paths = {
     scripts: {
         src: basePaths.src + '_scripts/',
         dest: basePaths.dest + 'js/',
+    },
+    sounds: {
+        src: basePaths.src + '_sounds/',
+        dest: basePaths.dest + 'sounds/'
     }
 };
 
@@ -35,7 +39,8 @@ var appFiles = {
     content: ['./_src/**/*.html', './_src/**/*.md'],
     images: paths.images.src + '*',
     styles: paths.styles.src + '**/*.scss',
-    scripts: paths.scripts.src + '**/*.js'
+    scripts: paths.scripts.src + '**/*.js',
+    sounds: paths.sounds.src + '*'
 };
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
@@ -78,6 +83,11 @@ gulp.task('sass', function () {
 
 gulp.task('scripts', function() {
   return buildScript('main.js', false); // this will run once because we set watch to false
+});
+
+gulp.task('sounds', function() {
+    return gulp.src(appFiles.sounds)
+        .pipe(gulp.dest(paths.sounds.dest))
 });
 
 /**
@@ -139,7 +149,7 @@ gulp.task('watch', function () {
     return buildScript('main.js', true);
 });
 
-gulp.task('build', ['jekyll-build', 'images', 'sass', 'scripts']);
+gulp.task('build', ['jekyll-build', 'images', 'sass', 'scripts', 'sounds']);
 
 /**
  * Default task, running just `gulp` will compile the sass,

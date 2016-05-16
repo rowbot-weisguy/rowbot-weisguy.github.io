@@ -3,22 +3,37 @@
 .party.is-chill {}
 
 .party.is-lit {
+    background-color: $gray-darker;
+    color: $white;
+
+    .header {
+        background-color: $black;
+    }
+
     a:not(.logo),
     .card__title {
         animation: 1s rainbow-foreground linear infinite;
     }
 
-    // background-color: $gray-darker;
-    // color: $white;
-
-    button {
+    .link:after,
+    .button {
         animation: 1s rainbow-background linear infinite;
     }
 
     .logo__effects {
+        animation: 2s spin linear infinite;
+
         &::before,
         &::after {
-            mix-blend-mode: none;
+            mix-blend-mode: normal;
+        }
+
+        &:before {
+            animation: 1s logo-pulse linear infinite;
+        }
+
+        &:after {
+            animation: 1s logo-pulse-reverse linear infinite;
         }
     }
 
