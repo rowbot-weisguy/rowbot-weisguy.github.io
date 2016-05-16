@@ -4,6 +4,7 @@ title: "Party Time!"
 date:  2016-05-16 11:59:45 PDT
 emoji: 🎉
 show_author: true
+hero: /assets/images/sandstorm.jpg
 categories:
 ---
 
