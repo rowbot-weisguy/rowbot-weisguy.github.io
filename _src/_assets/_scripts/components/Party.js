@@ -29,7 +29,7 @@ const Party = (function() {
                 document.body.classList.remove(STATES.chill, STATES.raging);
                 document.body.classList.add(STATES.lit);
                 Party.elements.music.play();
-                Party.elements.button.textContent = 'Chill';
+                Party.elements.button.textContent = 'Chill 😴';
                 break;
             case 'raging':
                 document.body.classList.remove(STATES.chill);
@@ -40,7 +40,7 @@ const Party = (function() {
                 document.body.classList.add(STATES.chill);
                 Party.elements.music.pause();
                 Party.elements.music.currentTime = 0;
-                Party.elements.button.textContent = 'Party';
+                Party.elements.button.textContent = 'Party 🎉';
                 break;
         }
 
