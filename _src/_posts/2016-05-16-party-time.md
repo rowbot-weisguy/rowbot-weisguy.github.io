@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Party Time!"
+description: I fucked up. The party feature is back.
 date:  2016-05-16 11:59:45 PDT
 emoji: 🎉
 show_author: true
+categories: personal
 hero: /assets/images/sandstorm.jpg
-categories:
 ---
 
 In my hasty decision to kill my darlings and just publish a damn site to play
