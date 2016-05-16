@@ -1,0 +1,49 @@
+.party {}
+
+.party.is-chill {}
+
+.party.is-lit {
+    background-color: $gray-darker;
+    color: $white;
+
+    .header {
+        background-color: $black;
+    }
+
+    a:not(.logo),
+    .card__title {
+        animation: 1s rainbow-foreground linear infinite;
+    }
+
+    .link:after,
+    .button {
+        animation: 1s rainbow-background linear infinite;
+    }
+
+    .logo__effects {
+        animation: 2s spin linear infinite;
+
+        &::before,
+        &::after {
+            mix-blend-mode: normal;
+        }
+
+        &:before {
+            animation: 1s logo-pulse linear infinite;
+        }
+
+        &:after {
+            animation: 1s logo-pulse-reverse linear infinite;
+        }
+    }
+
+    .logo__initial {
+        display: none;
+    }
+
+    .logo__party {
+        display: block;
+    }
+}
+
+.party.is-raging {}

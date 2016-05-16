@@ -1,9 +1,5 @@
 .nav {
-    position: relative;
-    left: 1rem;
-
     @include at-least($bp-layout) {
-        left: auto;
         text-align: center;
     }
 }
