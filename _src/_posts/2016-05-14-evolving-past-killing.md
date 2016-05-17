@@ -4,7 +4,7 @@ title: "Evolving past killing"
 description: I'm excited about the future of food because more people will be able to eat meat, yet we won't have to kill animals to do so.
 date:  2016-05-14 06:20:23 PDT
 emoji: 🐮
-categories: food, personal
+categories: food personal
 show_author: true
 hero: /assets/images/chickens.jpg
 ---
