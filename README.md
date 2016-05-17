@@ -1,9 +1,7 @@
 # rowanweismiller.com
 
 Hello! Welcome to the source for [@rowbot-weisguy](https://github.com/rowbot-weisguy)'s
-personal website. Feel free to wander through the source.
-
-✌
+personal website. Feel free to wander through the source. ✌
 
 ## Installation
 
@@ -21,9 +19,4 @@ Never give up on your dreams.
 
 Remember your training.
 
-<div style="font-size: 0.6rem">
-    <p>
-        But really, just clone this, use <code>npm install</code> to get the
-        dependencies, and then <code>gulp</code> to build and serve the site.
-    </p>
-</div>
+*But really, just clone this, use `npm install` to get the dependencies, and then `gulp` to build and serve the site.*
