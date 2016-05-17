@@ -19,6 +19,7 @@
 }
 
 .header__actions {
+    flex-grow: 0;
     margin-left: 1rem;
     @include at-least($bp-layout) {
         margin-left: 0;
