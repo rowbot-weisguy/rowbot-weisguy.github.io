@@ -3,7 +3,7 @@ layout: post
 title: "Why not be special?"
 date:  2016-05-11 04:55:15 PDT
 emoji: ⭐️️
-categories: personal, thoughts
+categories: personal thoughts
 show_author: true
 ---
 

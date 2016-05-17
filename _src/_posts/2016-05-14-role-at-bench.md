@@ -5,7 +5,7 @@ description: It feels weird being referred to as an 'engineer' since I don't hav
 date:  2016-05-14 15:38:13 PDT
 emoji: 🛠
 show_author: true
-categories: career, programming
+categories: career programming
 hero: /assets/images/good-news.png
 ---
 
