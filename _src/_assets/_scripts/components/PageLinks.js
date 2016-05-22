@@ -51,9 +51,9 @@ const PageLinks = (function() {
         let bio = h.createElement('p', 'author__bio');
 
         avatar.src = author.avatar_url;
-        subtext.textContent = 'Written on ' + date + ' by:';
+        subtext.textContent = 'Written on ' + date + ' by';
         name.textContent = author.name;
-        bio.textContent = author.bio;
+        bio.innerHTML = author.bio;
 
         textwrap.appendChild(subtext);
         textwrap.appendChild(name);
