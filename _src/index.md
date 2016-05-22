@@ -20,7 +20,7 @@ description: This is the blog and portfolio of Rowan Weismiller – a designer, 
                     </div>
                     <div class="card__text">
                         <h3 class="card__title">{{ post.title }}</h3>
-                        <span class="card__subtitle">{{ post.date | date_to_string}}</span>
+                        <span class="card__subtitle">{{ post.date | date: "%B %d %Y" }}</span>
                     </div>
                 </a>
             </li>

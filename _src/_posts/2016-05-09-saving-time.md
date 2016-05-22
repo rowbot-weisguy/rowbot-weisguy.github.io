@@ -32,4 +32,4 @@ many new civic and social participants.
 
 Awesome!
 
-[gates-letter]: //www.gatesnotes.com/2016-Annual-Letter?WT.mc_id=02_22_2016_00_AL2016_GL-GN_&WT.tsrc=GLGN
+[gates-letter]: https://www.gatesnotes.com/2016-Annual-Letter?WT.mc_id=02_22_2016_00_AL2016_GL-GN_&WT.tsrc=GLGN
