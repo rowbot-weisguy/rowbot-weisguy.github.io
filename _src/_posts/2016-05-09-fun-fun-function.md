@@ -28,4 +28,4 @@ What a guy!
 If you have any recommendations for resources like this one, I'm itching
 to learn more. Feel free to share in the comments below. 👇
 
-[fun-fun-function]: //www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q
+[fun-fun-function]: https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q

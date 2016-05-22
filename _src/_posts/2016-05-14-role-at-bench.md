@@ -28,4 +28,4 @@ contribute to the development of their businesses in more meaningful ways.
 Stoked!
 
 [saving-time]: /blog/saving-time/
-[bench]: //bench.co/
+[bench]: https://bench.co/

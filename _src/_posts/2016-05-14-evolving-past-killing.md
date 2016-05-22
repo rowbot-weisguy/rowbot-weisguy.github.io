@@ -59,11 +59,11 @@ Besides, killing animals seems pretty shitty.
 
 What do you think?
 
-[impossible-foods]: //impossiblefoods.com/
-[beyond-meat]: //beyondmeat.com/
-[beyond-meat-feature]: //www.outsideonline.com/1928211/top-secret-food-will-change-way-you-eat
-[memphis-meats]: //www.memphismeats.com/
-[mosa-meat]: //www.bbc.com/news/science-environment-34540193
-[gates-future-food]: //www.gatesnotes.com/About-Bill-Gates/Future-of-Food
-[water-beef]: //foodtank.com/news/2013/12/why-meat-eats-resources
-[water-scarcity]: //www.worldwildlife.org/threats/water-scarcity
+[impossible-foods]: http://impossiblefoods.com/
+[beyond-meat]: http://beyondmeat.com/
+[beyond-meat-feature]: http://www.outsideonline.com/1928211/top-secret-food-will-change-way-you-eat
+[memphis-meats]: http://www.memphismeats.com/
+[mosa-meat]: http://www.bbc.com/news/science-environment-34540193
+[gates-future-food]: https://www.gatesnotes.com/About-Bill-Gates/Future-of-Food
+[water-beef]: http://foodtank.com/news/2013/12/why-meat-eats-resources
+[water-scarcity]: http://www.worldwildlife.org/threats/water-scarcity

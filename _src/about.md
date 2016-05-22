@@ -46,12 +46,12 @@ And of course, you can find me around the internets.
 
 👇
 
-[siat]: //siat.sfu.ca/
-[mobify]: //www.mobify.com/
-[style-class]: //styleandclass.ca/
-[design-jam]: //siatjam.ca/
-[nacho-club]: //thenachoclub.com/
-[the-mexican]: //themexican.ca/
-[js-project]: //github.com/rowbot-weisguy/notes
-[bench]: //bench.co/
+[siat]: http://www.sfu.ca/siat.html
+[mobify]: http://www.mobify.com/
+[style-class]: http://www.styleandclass.ca/
+[design-jam]: http://siatjam.ca/
+[nacho-club]: http://thenachoclub.com/
+[the-mexican]: http://www.themexican.ca/
+[js-project]: https://github.com/rowbot-weisguy/notes
+[bench]: https://bench.co/
 [joining-bench]: /blog/role-at-bench/
