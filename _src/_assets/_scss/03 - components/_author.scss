@@ -16,13 +16,13 @@
     color: $gray-dark;
 }
 
-.author__subtext,
+.author__date,
 .author__name,
 .author__bio {
     margin-bottom: 0;
 }
 
-.author__subtext {
+.author__date {
     color: $gray-accessible;
     font-size: 1.4rem;
     font-style: italic;

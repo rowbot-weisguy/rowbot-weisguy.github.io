@@ -21,9 +21,11 @@ module Jekyll
   class JSONGenerator < Generator
     safe true
     priority :low
+    include Liquid::StandardFilters
 
     def generate(site)
-      # Converter for .md > .html
+
+      # Converter for Markdown > HTML
       converter = site.find_converter_instance(Jekyll::Converters::Markdown)
 
       # We want to go through all posts and pages
@@ -34,8 +36,15 @@ module Jekyll
 
         # Grab the post data in a hash
         hash = post.data
-        hash["content"] = converter.convert(post.content)
+
+        # Convert content from Liquid > Markdown
+        template = Liquid::Template.parse(post.content).render(site.site_payload)
+
+        # Convert content from Markdown > HTML
+        hash["content"] = converter.convert(template)
+        hash["datestring"] = date(post.data["date"], '%B %d %Y')
         hash["url"] = post.url
+        hash["author"] = site.config["author"]
 
         # Start building the path
         url = post.url
