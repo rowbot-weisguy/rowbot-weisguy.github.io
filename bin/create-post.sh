@@ -19,7 +19,8 @@ title: "$1"
 date:  `date "+%Y-%m-%d %H:%M:%S %Z"`
 emoji: 🔑
 show_author: true
-categories:
+hero: /assets/images/good-news.png
+categories: one two
 ---
 [Basic syntax help for Markdown](http://daringfireball.net/projects/markdown/basics)
 
