@@ -25,6 +25,7 @@ const PageLinks = (function() {
 
         addListeners();
         window.scroll(0, 0);
+        history.pushState(null, page.title, page.url);
     }
 
     function renderOpening(title, date) {
