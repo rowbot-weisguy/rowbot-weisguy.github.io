@@ -4,6 +4,7 @@
 
     @include at-least($bp-layout) {
         flex-direction: row;
+        overflow: hidden;
     }
 }
 
