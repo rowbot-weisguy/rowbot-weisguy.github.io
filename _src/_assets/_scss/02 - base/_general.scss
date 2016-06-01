@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 html {
     padding: 0;
     margin: 0;
@@ -19,6 +14,10 @@ body {
     margin: 0;
     color: $gray-darker;
     background-color: $gray-lightest;
+
+    &.is-loading {
+        overflow: hidden;
+    }
 }
 
 a {

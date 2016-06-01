@@ -13,8 +13,8 @@ const PageLinks = (function() {
         title.textContent = doc.querySelector('title').textContent;
         setTimeout(() => {
             content.innerHTML = payload.innerHTML;
-            content.classList.remove('is-loading');
-            content.classList.add('is-loaded');
+            document.body.classList.remove('is-loading');
+            document.body.classList.add('is-loaded');
 
             addListeners();
             window.scroll(0, 0);
@@ -23,8 +23,8 @@ const PageLinks = (function() {
     }
 
     function unload() {
-        content.classList.remove('is-loaded');
-        content.classList.add('is-loading');
+        document.body.classList.remove('is-loaded');
+        document.body.classList.add('is-loading');
     }
 
     function load(url) {

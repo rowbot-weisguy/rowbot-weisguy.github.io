@@ -1,5 +1,5 @@
 .content {
-    &.is-loaded {
+    .is-loaded & {
         animation: 0.3s fade-in-from-top ease-out forwards;
 
         @include at-least($bp-layout) {
@@ -7,7 +7,7 @@
         }
     }
 
-    &.is-loading {
+    .is-loading & {
         animation: 0.3s fade-out-to-bottom ease-out forwards;
 
         @include at-least($bp-layout) {
