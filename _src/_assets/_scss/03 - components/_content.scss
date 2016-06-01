@@ -1,0 +1,17 @@
+.content {
+    &.is-loaded {
+        animation: 0.3s fade-in-from-top ease-out forwards;
+
+        @include at-least($bp-layout) {
+            animation: 0.3s fade-in-from-left ease-out forwards;
+        }
+    }
+
+    &.is-loading {
+        animation: 0.3s fade-out-to-bottom ease-out forwards;
+
+        @include at-least($bp-layout) {
+            animation: 0.3s fade-out-to-right ease-out forwards;
+        }
+    }
+}

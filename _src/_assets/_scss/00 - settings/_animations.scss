@@ -26,14 +26,24 @@
     100% { color: #008080; }
 }
 
-@keyframes fade-in-up {
-    from { transform: translateY(50px); opacity: 0; }
+@keyframes fade-out-to-bottom {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(50px); opacity: 0; }
+}
+
+@keyframes fade-in-from-top {
+    from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
 
-@keyframes fade-out-down {
-    from { transform: translateY(0); opacity: 1; }
-    to { transform: translateY(50px); opacity: 0; }
+@keyframes fade-out-to-right {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(50px); opacity: 0; }
+}
+
+@keyframes fade-in-from-left {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes fade-in-bg {

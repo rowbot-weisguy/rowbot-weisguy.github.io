@@ -13,16 +13,5 @@
     &--hero {
         padding-top: 3rem;
         padding-bottom: 3rem;
-
-        @include at-least($bp-largest) {
-            // position: relative;
-            // padding: 4rem 4rem;
-            // margin-top: -$post-overlap;
-            // background-color: $gray-lightest;
-        }
-    }
-
-    a {
-        // @extend .link;
     }
 }
