@@ -1,9 +1,6 @@
 const helpers = {
     internalLink: function(link) {
-        return link.attributes.href.value.substring(0, 2) !== '//' || 'http';
-    },
-    externalLink: function(link) {
-        return link.attributes.href.value.substring(0, 2) === '//' || 'http';
+        return link.attributes.href.value.substring(0, 1) === '/';
     },
     ajaxGet: function(url) {
         return new Promise(function(resolve, reject) {
@@ -18,7 +15,7 @@ const helpers = {
             };
 
             req.onerror = function() {
-                reject (new Error("Network error"));
+                reject(new Error("Network error"));
             };
 
             req.send();
