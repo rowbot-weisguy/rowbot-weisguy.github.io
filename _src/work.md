@@ -4,7 +4,7 @@ title: Work | Rowan Weismiller | Designer & Developer
 ---
 
 <div class="opening">
-    <h1>Projects</h1>
+  <h1>Projects</h1>
 </div>
 
 1. Project

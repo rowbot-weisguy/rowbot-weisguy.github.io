@@ -1,37 +1,37 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ page.description }}">
-    <meta name="viewport" content="width=device-width">
-    <link href="/assets/images/favicon.png" rel="shortcut icon">
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="{% if page.path contains '_posts' %}article{% else %}website{% endif %}" />
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:description" content="{{ page.description }}" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:site_name" content="Rowan's Blog" />
-    <meta property="og:image" content="{{ site.url }}{{ page.hero | default: '/assets/images/logo-card.png' }}" />
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content=" {{ page.title }}"/>
-    <meta name="twitter:description" content="{{ page.description }}"/>
-    <meta name="twitter:site" content="@{{ site.author.twitter }}"/>
-    <meta name="twitter:image" content="{{ site.url }}{{ page.hero | default: '/assets/images/logo-card.png' }}"/>
-    <meta name="twitter:creator" content="@{{ site.author.twitter }}"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width">
+  <link href="/assets/images/favicon.png" rel="shortcut icon">
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="{% if page.path contains '_posts' %}article{% else %}website{% endif %}" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:site_name" content="Rowan's Blog" />
+  <meta property="og:image" content="{{ site.url }}{{ page.hero | default: '/assets/images/logo-card.png' }}" />
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content=" {{ page.title }}"/>
+  <meta name="twitter:description" content="{{ page.description }}"/>
+  <meta name="twitter:site" content="@{{ site.author.twitter }}"/>
+  <meta name="twitter:image" content="{{ site.url }}{{ page.hero | default: '/assets/images/logo-card.png' }}"/>
+  <meta name="twitter:creator" content="@{{ site.author.twitter }}"/>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <!-- Typekit -->
-    <script>
-        (function(d) {
-            var tkTimeout=3000;
-            if(window.sessionStorage){if(sessionStorage.getItem('useTypekit')==='false'){tkTimeout=0;}}
-                var config = {
-                  kitId: 'twt3aky',
-                  scriptTimeout: tkTimeout
-                },
-            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+"wf-inactive";if(window.sessionStorage){sessionStorage.setItem("useTypekit","false")}},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+="wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-    </script>
+  <!-- Typekit -->
+  <script>
+    (function(d) {
+      var tkTimeout=3000;
+      if(window.sessionStorage){if(sessionStorage.getItem('useTypekit')==='false'){tkTimeout=0;}}
+        var config = {
+          kitId: 'twt3aky',
+          scriptTimeout: tkTimeout
+        },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+"wf-inactive";if(window.sessionStorage){sessionStorage.setItem("useTypekit","false")}},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+="wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>

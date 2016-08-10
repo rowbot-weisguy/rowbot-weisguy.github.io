@@ -2,12 +2,12 @@
 layout: default
 ---
 <div class="opening">
-    <h1 class="opening__title">{{ page.title }}</h1>
-    <p class="opening__meta">Posted on {{ page.date | date_to_string }}</p>
+  <h1 class="opening__title">{{ page.title }}</h1>
+  <p class="opening__meta">Posted on {{ page.date | date_to_string }}</p>
 </div>
 
 <div class="post">
-    {{ content }}
-    {% include author.html %}
-    {% include comments.html %}
+  {{ content }}
+  {% include author.html %}
+  {% include comments.html %}
 </div>

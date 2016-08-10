@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body class="layout">
-        {% include header.html %}
-        <main class="content layout__content">
-            {% include hero.html %}
-            <article class="main {% if page.hero %}main--hero{% endif %}">
-                {{ content }}
-            </article>
-            {% include footer.html %}
-        </main>
-        {% include scripts.html %}
-    </body>
+  {% include head.html %}
+  <body class="layout">
+    {% include header.html %}
+    <main class="content layout__content">
+      {% include hero.html %}
+      <article class="main {% if page.hero %}main--hero{% endif %}">
+        {{ content }}
+      </article>
+      {% include footer.html %}
+    </main>
+    {% include scripts.html %}
+  </body>
 </html>
