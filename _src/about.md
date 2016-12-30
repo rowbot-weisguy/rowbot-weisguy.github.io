@@ -20,9 +20,9 @@ I'm here to help make it even better by:
 
 I studied [interaction design][siat] at SFU, worked at [Mobify][mobify] for
 over 2 years in an interdisciplinary marketing team, then left to work as a
-contractor. After a year of helping clients with front-end execution, I'm
-[joining the team][joining-bench] at [Bench][bench] for a new adventure as a
-front-end software engineer.
+contractor. After a year of helping clients with front-end execution, I
+[joined the team][joining-bench] at [Bench][bench] for a new adventure as a
+front-end software engineer in May of 2016.
 
 ## Community
 
@@ -36,11 +36,10 @@ Vancouver. [The Mexican][the-mexican] is currently our highest rated spot.
 
 ## Right Now
 
-- Writing for and improving my personal site (the one you're looking at) 🤘
+- Working on a new content marketing platform for [Bench](https:///bench.co)
 - Organizing [Style & Class][style-class]'s upcoming event 👀
-- Mentally preparing to join [Bench][bench] on May 24th 💼
 - Redesigning [The Nacho Club][nacho-club] site 🔑
-- Leveling up my [JavaScript skillz][js-project] 💯
+- Leveling up my JavaScript skillz 💯
 
 And of course, you can find me around the internets.
 
