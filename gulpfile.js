@@ -10,6 +10,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var imagemin    = require('gulp-imagemin');
 var cp          = require('child_process');
+var sequence    = require('run-sequence');
 
 var basePaths = {
     src: './_src/_assets/',
@@ -87,6 +88,7 @@ gulp.task('scripts', function() {
 
 gulp.task('sounds', function() {
     return gulp.src(appFiles.sounds)
+        .on('error', handleErrors)
         .pipe(gulp.dest(paths.sounds.dest))
 });
 
@@ -145,14 +147,20 @@ function buildScript(file, watch) {
  */
 gulp.task('watch', function () {
     gulp.watch(appFiles.styles, ['sass']);
-    gulp.watch(appFiles.content, ['jekyll-rebuild']);
+    gulp.watch(appFiles.content, ['build']);
     return buildScript('main.js', true);
 });
 
-gulp.task('build', ['jekyll-build', 'images', 'sass', 'scripts', 'sounds']);
+gulp.task('build', function(callback) {
+  sequence('jekyll-build', ['images', 'sass', 'scripts', 'sounds'], callback);
+});
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['build', 'browser-sync', 'watch']);
+gulp.task('serve', function(callback) {
+  sequence('build', 'browser-sync', 'watch', callback);
+});
+
+gulp.task('default', ['serve']);
