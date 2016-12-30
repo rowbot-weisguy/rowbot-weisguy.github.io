@@ -2,7 +2,7 @@
 layout: post
 title: "Fun Fun Function"
 date:  2016-05-09 21:26:26 PDT
-categories: coding
+categories: programming
 emoji: 🤓
 show_author: true
 ---
