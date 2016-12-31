@@ -104,3 +104,49 @@ just to make sure the clock is correct on page load, rather than waiting a full
 The one thing I noticed / liked about this lesson is that using CSS transform's
 `rotate()` property can exceed 360deg and it will still look normal as it wraps
 back around (i.e. 365deg looks the same as 5deg).
+
+### Project 3 - Playing with CSS Variables and JS
+
+This project controls an image's styling with some basic inputs (sliders, color
+picker) in order to demonstrate the power of CSS variables.
+
+Anyway!
+
+Data attributes and `dataset`.
+
+Here's a CodePen:
+
+<p data-height="392" data-theme-id="0" data-slug-hash="mRbWwb" data-default-tab="html,result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Playing with CSS Variables and JS" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/mRbWwb/">Playing with CSS Variables and JS</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+I enjoyed this one because Wes took a moment to talk about a few small details.
+
+I liked a few things:
+
+1. Wes talked a bit about Node Lists, indirectly addressing the first comment I
+made on Project 1. He explained that there is very limited functionality on the
+NodeList's prototype, meaning we don't get cool functions like `map`, `reduce`,
+or `filter`. When we need those kinds of functions, we can convert a NodeList
+into an Array. I've done this before, but I wasn't sure when or not to do it.
+
+2. This exercise actually use the `dataset` property of an element to access the
+values of the data attributes on it. The difference between this one and the
+first exercise's use of data attributes, is that accessing `dataset` isn't picky
+about whether or not a certain data attribute is present, whereas the selector
+predicts an element will exist with a certain attribute value.
+
+3. CSS variables are accessible via JavaScript on any DOM node using `style`'s
+`setProperty` method. In the following function example, we are listening to
+updates on input elements, and then re-assigning a CSS variable on the document
+root with the same `name` as the input, and using the input's value as the CSS
+variable's value.
+
+```js
+function handleUpdate(e) {
+  const suffix = this.dataset.sizing || '';
+  document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+}
+```
+
+Great stuff! I understand better now how CSS variables are better than the SASS
+equivalent.
