@@ -57,7 +57,7 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound);
 ```
 
-Most of this was review for me, but I did take notice of a couple things I liked.
+Here's a couple things I noticed / liked:
 
 1. Use `forEach` to iterate through a NodeList, as was done with `keys` here
 2. Prefer named functions for use as event callbacks
@@ -65,3 +65,42 @@ Most of this was review for me, but I did take notice of a couple things I liked
 and search its `dataset` to take advantage of the selectors.
 
 A nice easy start :)
+
+### Project 2 - CSS + JS Clock
+
+This project makes a clock using JavaScript's built-in `Date` function. It's a
+bit simpler than the first project.
+
+Here's the JS:
+
+```js
+const hourHand = document.querySelector('.hour-hand');
+const minHand = document.querySelector('.min-hand');
+const secHand = document.querySelector('.second-hand');
+
+function setDate() {
+  const now = new Date();
+
+  const hour = now.getHours();
+  const min = now.getMinutes();
+  const sec = now.getSeconds();
+  const hourDegrees = ((hour / 12) * 360) + 90;
+  const minDegrees = ((min / 60) * 360) + 90;
+  const secDegrees = ((sec / 60) * 360) + 90;
+
+  hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+  minHand.style.transform = `rotate(${minDegrees}deg)`;
+  secHand.style.transform = `rotate(${secDegrees}deg)`;
+}
+
+setInterval(setDate, 1000);
+setDate();
+```
+
+It wasn't part of the instructions, but I called `setDate()` once at the end
+just to make sure the clock is correct on page load, rather than waiting a full
+1000ms for `setInterval` to fire.
+
+The one thing I noticed / liked about this lesson is that using CSS transform's
+`rotate()` property can exceed 360deg and it will still look normal as it wraps
+back around (i.e. 365deg looks the same as 5deg).
