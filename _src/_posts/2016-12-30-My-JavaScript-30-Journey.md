@@ -21,8 +21,8 @@ in the last year has it become more of a focus for me.
 
 So I decided to take Wes Bos' [JavaScript 30](https://javascript30.com/) coding
 challenge / course. I want to document it so I get more out of it while sharing
-what I learn with others, so this is my first out of 4 posts on this. I'll put
-out one post per week sharing a short recap.
+what I learn with others, so this is my first out of 5 posts on this. I'll put
+out roughly one post per week sharing a short recap.
 
 Let's get to work!
 
