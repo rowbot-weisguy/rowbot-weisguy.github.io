@@ -156,7 +156,7 @@ equivalent.
 This was a pure JS exercise in array manipulation using higher order functions.
 
 I loved it! It was quite fun. This is stuff I'm already getting a bit familiar
-with in my work at Bench and often have fun solving. 
+with in my work at Bench and often have fun solving.
 
 Here's a CodePen:
 
@@ -180,3 +180,20 @@ That `includes()` function is available to both `Array.prototype` and
 `String.prototype`, but it's a tad confusing that the `String.prototype`
 implementation is an ES6 standard, while the `Array.prototype` implementation is
 an ES7 standard.
+
+### Project 5 - Flex Panels
+
+This was a mostly CSS driven exercise with a little bit of JS for class toggles.
+
+Here's the CodePen:
+
+<p data-height="300" data-theme-id="0" data-slug-hash="MJgmGx" data-default-tab="html,result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Flex Panels" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/MJgmGx/">Flex Panels</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+Here's what I enjoyed / learned from the project:
+
+1. When writing something like `flex: 5`, it means that flex-item will take up
+5x the remaining flexible space compared to its sibling flex-items.
+2. Flexbox rules!
+
+### Project 6 - Ajax Type Ahead
