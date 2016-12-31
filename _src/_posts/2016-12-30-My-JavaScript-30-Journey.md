@@ -116,7 +116,7 @@ Data attributes and `dataset`.
 
 Here's a CodePen:
 
-<p data-height="392" data-theme-id="0" data-slug-hash="mRbWwb" data-default-tab="html,result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Playing with CSS Variables and JS" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/mRbWwb/">Playing with CSS Variables and JS</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="0" data-slug-hash="mRbWwb" data-default-tab="html,result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Playing with CSS Variables and JS" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/mRbWwb/">Playing with CSS Variables and JS</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 I enjoyed this one because Wes took a moment to talk about a few small details.
@@ -150,3 +150,33 @@ function handleUpdate(e) {
 
 Great stuff! I understand better now how CSS variables are better than the SASS
 equivalent.
+
+### Project 4 - Array Cardio
+
+This was a pure JS exercise in array manipulation using higher order functions.
+
+I loved it! It was quite fun. This is stuff I'm already getting a bit familiar
+with in my work at Bench and often have fun solving. 
+
+Here's a CodePen:
+
+<p data-height="300" data-theme-id="0" data-slug-hash="RKbVgK" data-default-tab="html,result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Array Cardio" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/RKbVgK/">Array Cardio</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+Here's what I enjoyed / learned from the project:
+
+1. There's a `console.table()` method that's handy for printing out arrays of objects, which is pretty common for me.
+2. `Array.prototype.sort()` will automatically sort descending (for numberic arrays) or alphabetically (for string arrays) when called without passing any arguments.
+
+One note, looking at this code example:
+
+```js
+const streetsWithDe = links
+                        .map(link => link.textContent)
+                        .filter(text => text.includes('de'));
+```
+
+That `includes()` function is available to both `Array.prototype` and
+`String.prototype`, but it's a tad confusing that the `String.prototype`
+implementation is an ES6 standard, while the `Array.prototype` implementation is
+an ES7 standard.
