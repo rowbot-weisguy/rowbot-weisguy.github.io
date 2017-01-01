@@ -197,3 +197,19 @@ Here's what I enjoyed / learned from the project:
 2. Flexbox rules!
 
 ### Project 6 - Ajax Type Ahead
+
+This project simulated the need to get results back from a search field for US
+cities and states.
+
+Here's the CodePen:
+
+<p data-height="300" data-theme-id="0" data-slug-hash="PWYmgR" data-default-tab="css,result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="AJAX Type Ahead" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/PWYmgR/">AJAX Type Ahead</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+Here's what I enjoyed / learned from the project:
+
+1. Wes made a point about getting your data ready first before you start
+worrying about how you'll render it. It reminded me of the kitchen principle to
+have everything _mise en place_.
+2. How to use the `RegExp` constructor in JS to dynamically create a regex with a variable term.
+3. The UI pattern of highlighting the search term's appearance within the results.
