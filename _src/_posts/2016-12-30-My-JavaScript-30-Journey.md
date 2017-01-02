@@ -19,7 +19,7 @@ JavaScript to _really_ grok the context for the language's development. I'm a
 relative noob in the JS world. I've only been writing JS for 3 years, and only
 in the last year has it become more of a focus for me.
 
-So I decided to take Wes Bos' [JavaScript 30](https://javascript30.com/) coding
+So I decided to take Wes Bos' [#JavaScript30](https://javascript30.com/) coding
 challenge / course. I want to document it so I get more out of it while sharing
 what I learn with others, so this is my first out of 5 posts on this. I'll put
 out roughly one post per week sharing a short recap.
@@ -213,3 +213,10 @@ worrying about how you'll render it. It reminded me of the kitchen principle to
 have everything _mise en place_.
 2. How to use the `RegExp` constructor in JS to dynamically create a regex with a variable term.
 3. The UI pattern of highlighting the search term's appearance within the results.
+
+Anyway, that's post one. If you like what I'm sharing here, then I highly
+encourage you to go to the [#JavaScript30](https://javascript30.com/) site and
+sign up to get this sent to you. It's a fun way to flex your web development
+muscle. Starting a practice of coding every day is something I'm excited about.
+
+If you do start, let me know! I want to cheer you on. 
