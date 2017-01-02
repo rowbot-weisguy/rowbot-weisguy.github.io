@@ -155,10 +155,6 @@ gulp.task('build', function(callback) {
   sequence('jekyll-build', ['images', 'sass', 'scripts', 'sounds'], callback);
 });
 
-/**
- * Default task, running just `gulp` will compile the sass,
- * compile the jekyll site, launch BrowserSync & watch files.
- */
 gulp.task('serve', function(callback) {
   sequence('build', 'browser-sync', 'watch', callback);
 });

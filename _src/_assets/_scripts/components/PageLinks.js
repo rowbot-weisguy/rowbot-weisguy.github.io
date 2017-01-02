@@ -1,4 +1,5 @@
 import h from '../helpers/helpers';
+import prismjs from 'prismjs';
 
 const PageLinks = (function() {
   const linkSuffix = 'index.html';
@@ -17,6 +18,7 @@ const PageLinks = (function() {
       document.body.classList.add('is-loaded');
       addListeners();
       window.scroll(0, 0);
+      prismjs.highlightAll();
       history.pushState(null, title.textContent, url);
     }, animationTime);
   }

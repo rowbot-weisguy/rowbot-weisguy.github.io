@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "gulp build",
-    "dev": "gulp",
+    "dev": "gulp serve",
     "deploy": "npm run build && surge _public rowanweismiller.com"
   },
   "repository": {
