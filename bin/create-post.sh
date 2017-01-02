@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ] ; then
 fi
 
 
-title=`echo "$1" |sed 's/ /-/g'`
+title=`echo "$1" | sed 's/ /-/g' | tr '[:upper:]' '[:lower:]'`
 fileName="_src/_posts/`date +%Y-%m-%d-$title.md`"
 
 touch $fileName

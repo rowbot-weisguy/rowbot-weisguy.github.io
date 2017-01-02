@@ -12,7 +12,7 @@ url: http://rowanweismiller.com
 markdown: kramdown
 kramdown:
     smart_quotes: ["rdquo", "rsquo", "ldquo", "rdquo"]
-highlighter: pygments # or rouge or null
+highlighter: none
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 source: _src
 destination: _public

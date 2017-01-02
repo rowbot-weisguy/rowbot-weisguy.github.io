@@ -10,6 +10,7 @@
 *.orig
 *.pyc
 *.pid
+*.log
 
 node_modules
 _public
