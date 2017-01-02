@@ -19,7 +19,7 @@ Let's get to work!
 
 ***
 
-### Project 7 - Array Cardio 2
+## 7 - Array Cardio 2
 
 Ok! Another array exercise. Fun stuff.
 
