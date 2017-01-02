@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My JavaScript 30 Journey"
+title: "JavaScript30 - Part 1"
 date:  2016-12-30 10:15:42 PST
 emoji: 💻
 show_author: true
@@ -26,7 +26,7 @@ out roughly one post per week sharing a short recap.
 
 Let's get to work!
 
-===
+***
 
 ### Project 1 - Keyboard Drumkit
 
@@ -214,9 +214,11 @@ have everything _mise en place_.
 2. How to use the `RegExp` constructor in JS to dynamically create a regex with a variable term.
 3. The UI pattern of highlighting the search term's appearance within the results.
 
-Anyway, that's post one. If you like what I'm sharing here, then I highly
-encourage you to go to the [#JavaScript30](https://javascript30.com/) site and
-sign up to get this sent to you. It's a fun way to flex your web development
-muscle. Starting a practice of coding every day is something I'm excited about.
+***
 
-If you do start, let me know! I want to cheer you on. 
+That's part one! If you like what I'm sharing here, then I highly encourage you
+to go to the [#JavaScript30](https://javascript30.com/) site and sign up to get
+this sent to you. It's a fun way to flex your web development muscle. Starting a
+practice of coding every day is something I'm excited about.
+
+If you do start, let me know! I want to cheer you on.
