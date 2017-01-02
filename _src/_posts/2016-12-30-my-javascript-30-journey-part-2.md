@@ -5,7 +5,7 @@ date:  2017-01-01 10:15:42 PST
 emoji: 💻
 show_author: true
 categories: programming
-draft: true
+hidden: true
 ---
 
 Hello! This is part 2 of a 5 part series sharing my learnings from Wes Bos'
