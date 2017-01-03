@@ -1,5 +1,3 @@
-import extend from 'lodash/fp/extend';
-
 const Party = (function() {
 	const STATES = {
 		chill: 'is-chill',
@@ -57,7 +55,7 @@ const Party = (function() {
 
 	return {
 		init: function(elements) {
-			Party.elements = extend({
+			Party.elements = Object.assign({
 				button: document.querySelector('.js-party-button'),
 				superButton: document.querySelector('.js-super-party-button'),
 				music: document.querySelector('.js-party-music')
