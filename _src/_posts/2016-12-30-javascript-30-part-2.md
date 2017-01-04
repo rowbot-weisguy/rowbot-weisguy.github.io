@@ -77,3 +77,21 @@ Here's what I enjoyed / learned from the project:
 
 1. I didn't know about `Array.prototype.some()`, `Array.prototype.every()`, or `Array.prototype.findIndex()`, so that's cool to know.
 2. When removing a particular index of an array, it might be a good idea to create a new array with array spreads sliced before and after that index. I have no idea if what I said used correct verbiage at all. Please correct me if possible.
+
+***
+
+## 8 - Fun with HTML5 Canvas
+
+Simple drawing app using the `canvas` HTML5 element. This reminded me a lot of
+university, where we used [Processing](https://processing.org/) as a visual way
+to learn how to program. It's been a long time since I did this kind of `canvas`
+style programming.
+
+<p data-height="265" data-theme-id="0" data-slug-hash="ggObRV" data-default-tab="js,result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Fun with HTML5 Canvas" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/ggObRV/">Fun with HTML5 Canvas</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+Here's what I enjoyed / learned from the project:
+
+1. The nostalgia of using code to draw on the screen.
+2. How easy canvas is to get started.
+3. Wes' aside on how [HSL](http://mothereffinghsl.com/) works was a nice review. HSL ftw.
