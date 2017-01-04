@@ -95,3 +95,24 @@ Here's what I enjoyed / learned from the project:
 1. The nostalgia of using code to draw on the screen.
 2. How easy canvas is to get started.
 3. Wes' aside on how [HSL](http://mothereffinghsl.com/) works was a nice review. HSL ftw.
+
+## 9 - Dev Tools Tricks
+
+A bunch of `console` object demonstrations. I didn't know most of these tbh.
+
+<p data-height="265" data-theme-id="0" data-slug-hash="pRoZpX" data-default-tab="result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Dev Tools Tricks" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/pRoZpX/">Dev Tools Tricks</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+Here's what I enjoyed / learned from the project:
+
+1. Styled console logs using `%c`!!! COOOOOOOOL. So pretty!
+2. `console.assert()` is also cool. I often find myself wrapping `console.log()`s within an if statement. UNNECESSARY.
+3. `console.dir()` seems like it might be useful if I'm really in deep with element properties.
+4. `console.group()` looks useful so I don't just spam my console when checking inside of iterators.
+5. `console.time()` looks like a poor man's user timings. Quick and dirty.
+6. Last but not least, setting a breakpoint on attribute modification, directly from right clicking a DOM node in inspector. I know this exists. I just still always type `debugger` in my code for no reason other than habit.
+
+I can't believe how under-explored the console / inspector is for me! When I was
+a kid I grew up checking _all_ the settings of Windows 3.1. That shit was my
+JAM! And now here I am, a grown ass professional developer and I ignore half the
+options available to me. This lesson woke me up hard!
