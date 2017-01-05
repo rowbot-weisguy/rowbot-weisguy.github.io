@@ -116,3 +116,34 @@ I can't believe how under-explored the console / inspector is for me! When I was
 a kid I grew up checking _all_ the settings of Windows 3.1. That shit was my
 JAM! And now here I am, a grown ass professional developer and I ignore half the
 options available to me. This lesson woke me up hard!
+
+## 10 - Hold Shift and Check Checkboxes
+
+This exercise has us reproduce the mass-select functionality of shift clicking on checkboxes. I learned a bunch of tidbits along the way, here!
+
+<p data-height="265" data-theme-id="0" data-slug-hash="ZLYeMK" data-default-tab="html,result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Hold Shift & Check Checkboxes" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/ZLYeMK/">Hold Shift & Check Checkboxes</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+Since the code was so short, I'll drop it here, too:
+
+```js
+let lastChecked = null;
+const checkboxes = Array.from(document.querySelectorAll('input[type="checkbox"]'));
+
+function handleCheck(e) {
+  if (e.shiftKey && this.checked) {
+    const start = checkboxes.indexOf(lastChecked);
+    const end = checkboxes.indexOf(this);
+    const affected = checkboxes.filter((checkbox, index) => index > start && index < end);
+    affected.forEach(checkbox => checkbox.checked = true);
+  }
+  lastChecked = this;
+}
+
+checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+```
+
+Here's what I enjoyed / learned from the project:
+
+1. There's an `event.shiftKey` property, but it's only available on certain events (i.e. not `change`).
+2. I preferred an alternative to using the `inBetween` variable by getting the indices of the last and current checked checkboxes, then using `Array.prototype.filter()` to get the items within that range. 
