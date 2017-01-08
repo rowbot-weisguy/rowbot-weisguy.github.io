@@ -2,7 +2,7 @@
 layout: post
 title: "JavaScript30 - Part 2"
 description: I'm writing JavaScript every day for 30 days to see what I learn.
-date:  2017-07-01 10:15:42 PST
+date:  2017-01-07 10:15:42 PST
 emoji: 💻
 show_author: true
 categories: programming
