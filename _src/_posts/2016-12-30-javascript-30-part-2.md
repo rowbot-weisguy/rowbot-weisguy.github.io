@@ -146,4 +146,41 @@ checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
 Here's what I enjoyed / learned from the project:
 
 1. There's an `event.shiftKey` property, but it's only available on certain events (i.e. not `change`).
-2. I preferred an alternative to using the `inBetween` variable by getting the indices of the last and current checked checkboxes, then using `Array.prototype.filter()` to get the items within that range. 
+2. I preferred an alternative to using the `inBetween` variable by getting the indices of the last and current checked checkboxes, then using `Array.prototype.filter()` to get the items within that range.
+
+***
+
+## 11 - Custom Video Player
+
+Video player controls from scratch. Well, Wes started us off with some styles,
+but building the event handling that interfaces with an `HTMLMediaElement`. This
+might be useful one day soon! I hear Bench wants to do a video campaign...
+
+<p data-height="265" data-theme-id="0" data-slug-hash="apOxvN" data-default-tab="css,result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Custom Video Player" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/apOxvN/">Custom Video Player</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+I got started pretty well without watching the lesson, but I ended up tuning in to see how Wes built the scrubber for the video time.
+
+One really cool feature was the handler for the volume and playback rate sliders. Check this out:
+
+```html
+<input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+```
+
+```js
+function moveSlider(e) {
+  video[this.name] = this.value;
+}
+```
+
+Leaning on conventions for the `name` attribute that map to element properties
+in JS is a really elegant solution. I really like that function. I can't imagine
+it being any simpler!
+
+Other than that, I just wanna acknowledge how bloated this JavaScript is.
+Writing a `querySelector` for each and every element to store in a variable,
+plus attaching all the necessary event handlers for each element (sometimes
+multiple events). It's gross! Even though this series is Vanilla JS, I think a
+declarative framework would make this much more maintainable for the short to
+mid-term. In the long-term, vanilla JS would still be better because it wouldn't
+go out of style. 😎
