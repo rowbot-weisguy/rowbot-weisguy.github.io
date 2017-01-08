@@ -184,3 +184,27 @@ multiple events). It's gross! Even though this series is Vanilla JS, I think a
 declarative framework would make this much more maintainable for the short to
 mid-term. In the long-term, vanilla JS would still be better because it wouldn't
 go out of style. 😎
+
+***
+
+# 12 - Key Sequence
+
+A Konami code detector, basically. Alright. Cool.
+
+<p data-height="265" data-theme-id="0" data-slug-hash="ggpyrz" data-default-tab="result" data-user="rowbot_weisguy" data-embed-version="2" data-pen-title="Key Detection" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/rowbot_weisguy/pen/ggpyrz/">Key Detection</a> by Rowan Weismiller (<a href="http://codepen.io/rowbot_weisguy">@rowbot_weisguy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+I just followed along this one. It was really easy and I just wanted to see how
+Wes would do it. No surprises, really! I liked unicorns to make things interesting :)
+
+What I _really_ took away from this, though, is the need to add some extra party
+to my website. It'll happen.
+
+***
+
+OK! That's part two! If you like what I'm sharing here, then I highly encourage
+you to go to the [#JavaScript30](https://javascript30.com/) site and sign up to
+get this sent to you. It's a fun way to flex your web development muscle. Coding
+every day is something I'm excited about.
+
+If you do start, let me know! I want to cheer you on.
