@@ -1,4 +1,4 @@
-import h from '../helpers/helpers';
+import { ajaxGet } from '../helpers';
 import prismjs from 'prismjs';
 
 const PageLinks = (function() {
@@ -8,19 +8,17 @@ const PageLinks = (function() {
   const content = document.querySelector('.content');
   const title = document.querySelector('title');
 
-  function render(page, url) {
-    let doc = parser.parseFromString(page, "text/html");
+  function render(response) {
+    let doc = parser.parseFromString(response, 'text/html');
     let payload = doc.querySelector('.content');
     title.textContent = doc.querySelector('title').textContent;
-    setTimeout(() => {
-      content.innerHTML = payload.innerHTML;
-      document.body.classList.remove('is-loading');
-      document.body.classList.add('is-loaded');
-      addListeners();
-      window.scroll(0, 0);
-      prismjs.highlightAll();
-      history.pushState(null, title.textContent, url);
-    }, animationTime);
+    content.innerHTML = payload.innerHTML;
+    document.body.classList.remove('is-loading');
+    document.body.classList.add('is-loaded');
+    addListeners();
+    window.scroll(0, 0);
+    prismjs.highlightAll();
+    history.pushState(null, title.textContent, response.url);
   }
 
   function unload() {
@@ -29,29 +27,29 @@ const PageLinks = (function() {
   }
 
   function load(url) {
-    h.ajaxGet(url + linkSuffix)
-      .catch(function(error) { throw new AJAXError(error); })
-      .then((r) => render(r, url))
-      .catch(function(error) { throw new ApplicationError(error); });
+    fetch(url)
+      .then(response => response.text())
+      .then(render)
+      .catch(function(err) { throw new Error(err); });
   }
 
-  function handleLinkClick(event) {
+  function handleLink(event) {
     event.preventDefault();
     let link = event.currentTarget.attributes.href.value;
     unload();
     load(link);
   }
 
+  function isInternalLink(link) {
+    return link.attributes.href.value.substring(0, 1) === '/';
+  }
+
   function addListeners() {
-    let links = [].slice.call(document.querySelectorAll('a'));
-    links.filter(h.internalLink).map(listen);
+    const links = Array.from(document.querySelectorAll('a'));
+    links.filter(isInternalLink).forEach(link => link.addEventListener('click', handleLink));
     window.onpopstate = function(e) {
       load(document.location.href);
     }
-  }
-
-  function listen(link) {
-    link.addEventListener('click', handleLinkClick);
   }
 
   return {
