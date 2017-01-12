@@ -19,10 +19,6 @@ body {
   margin: 0;
   color: $gray-darker;
   background-color: $gray-lightest;
-
-  &.is-loading {
-    overflow: hidden;
-  }
 }
 
 a {

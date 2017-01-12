@@ -186,7 +186,7 @@ go out of style. 😎
 
 ***
 
-# 12 - Key Sequence
+## 12 - Key Sequence
 
 A Konami code detector, basically. Alright. Cool.
 
