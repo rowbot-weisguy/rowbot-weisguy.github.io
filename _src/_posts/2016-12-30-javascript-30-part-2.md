@@ -95,6 +95,8 @@ Here's what I enjoyed / learned from the project:
 2. How easy canvas is to get started.
 3. Wes' aside on how [HSL](http://mothereffinghsl.com/) works was a nice review. HSL ftw.
 
+***
+
 ## 9 - Dev Tools Tricks
 
 A bunch of `console` object demonstrations. I didn't know most of these tbh.
@@ -115,6 +117,8 @@ I can't believe how under-explored the console / inspector is for me! When I was
 a kid I grew up checking _all_ the settings of Windows 3.1. That shit was my
 JAM! And now here I am, a grown ass professional developer and I ignore half the
 options available to me. This lesson woke me up hard!
+
+***
 
 ## 10 - Hold Shift and Check Checkboxes
 
