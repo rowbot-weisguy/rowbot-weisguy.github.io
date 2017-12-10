@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
+import Typekit from 'react-typekit';
 
 import Header from '../ui/Header/Header';
 import Footer from '../ui/Footer/Footer';
@@ -25,6 +26,7 @@ const TemplateWrapper = ({ children }) => (
       </main>
       <Footer />
     </div>
+    <Typekit kitId="twt3aky" />
   </div>
 );
 
