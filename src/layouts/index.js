@@ -15,14 +15,16 @@ const TemplateWrapper = ({ children }) => (
       title="Gatsby Default Starter"
       meta={[
         { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'keywords', content: 'design, development' },
       ]}
     />
     <Header modifiers={styles.header} />
-    <main className={styles.content}>
-      {children()}
+    <div className={styles.content}>
+      <main className={styles.main}>
+        {children()}
+      </main>
       <Footer />
-    </main>
+    </div>
   </div>
 );
 

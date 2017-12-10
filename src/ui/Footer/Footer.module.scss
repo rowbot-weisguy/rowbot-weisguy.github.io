@@ -1,9 +1,16 @@
 @import "../../assets/scss/vars/colours";
+@import "../../assets/scss/vars/mixins";
+@import "../../assets/scss/vars/breakpoints";
 
 .footer {
   display: block;
-  padding: 4rem;
+  padding: 4rem 2rem;
   border-top: 1px solid $gray-lighter;
+
+  @include at-least($bp-layout) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .fineprint {
