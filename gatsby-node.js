@@ -4,9 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
- // You can delete this file if you're not using it
+const path = require('path');
 
- exports.createPages = ({ boundActionCreators, graphql }) => {
+exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
   const pageQuery = `
@@ -17,7 +17,6 @@
           id
           title
           slug
-          body
         }
       }
     }
@@ -35,7 +34,7 @@
           reject(result.errors);
         }
 
-        const pages = result.data.allContentfulLandingPage.edges;
+        const pages = result.data.allContentfulPage.edges;
 
         // Create pages for each markdown file.
         pages.forEach(({ node }) => {
