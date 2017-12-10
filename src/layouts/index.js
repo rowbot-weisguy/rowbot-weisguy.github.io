@@ -13,7 +13,7 @@ import styles from './index.module.scss';
 const TemplateWrapper = ({ children }) => (
   <div className={styles.layout}>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Rowan Weismiller — Frontend Developer"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'design, development' },
