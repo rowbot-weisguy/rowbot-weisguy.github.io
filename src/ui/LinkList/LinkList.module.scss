@@ -1,0 +1,19 @@
+@import "../../assets/scss/vars/colours";
+
+.list {
+  padding: 0;
+}
+
+.item {
+  display: block;
+}
+
+.horizontal {
+  & > .item {
+    display: inline;
+  }
+
+  & > .item + .item::before {
+    content: " / ";
+  }
+}
