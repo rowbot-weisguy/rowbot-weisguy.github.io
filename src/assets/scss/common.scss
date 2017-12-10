@@ -2,8 +2,8 @@
 |* rowanweismiller.com                                                      *|
 \* =========================================================================*/
 
-@import "00 - settings/settings";
-@import "01 - vendor/vendor";
-@import "02 - base/base";
-@import "03 - components/components";
-@import "04 - utilities/utilities";
+@import "~reset-scss";
+@import "~prismjs/themes/prism-solarizedlight.css";
+
+@import "base/global";
+@import "base/typography";

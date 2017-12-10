@@ -4,10 +4,13 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "classnames": "^2.2.5",
     "gatsby": "^1.9.127",
     "gatsby-link": "^1.6.30",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sass": "^1.0.14"
+    "gatsby-plugin-sass": "^1.0.14",
+    "prismjs": "^1.9.0",
+    "reset-scss": "^1.0.0"
   },
   "keywords": [
     "gatsby"

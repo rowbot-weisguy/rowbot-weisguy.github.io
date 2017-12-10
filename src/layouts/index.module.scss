@@ -1,14 +1,19 @@
+@import "../assets/scss/vars/mixins";
+@import "../assets/scss/vars/breakpoints";
+@import "../assets/scss/vars/spacing";
+
 .layout {
   display: flex;
   flex-direction: column;
 
   @include at-least($bp-layout) {
+    height: 100%;
     flex-direction: row;
     overflow: hidden;
   }
 }
 
-.layout__header {
+.header {
   flex: 0 0 6rem;
 
   @include at-least($bp-layout) {
@@ -16,7 +21,7 @@
   }
 }
 
-.layout__content {
+.content {
   flex-grow: 1;
 
   @include at-least($bp-layout) {
