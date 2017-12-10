@@ -1,0 +1,58 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: $white;
+  border: solid $gray-lighter;
+  border-width: 1px 1px 2px 1px;
+  // box-shadow: 0 1px 0 0 rgba($logo-color-1, 0.5);
+  transition: border 0.3s ease-in,
+        transform 0.3s ease-in;
+  &,
+  &:hover {
+    color: $gray-darker;
+  }
+  &:hover,
+  &:focus {
+    transition: box-shadow 0.1s ease-out,
+          transform 0.1s ease-out;
+    border-bottom-color: rgba($logo-color-1, 0.8);
+    transform: scale(1.01) translateY(-1px);
+  }
+  &:active {
+    transition: none;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.card__emoji {
+  flex-grow: 0;
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+
+.card__text {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.card__title {
+  @extend %body-font;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: $color-primary;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.card__subtitle {
+  display: block;
+  color: $gray-accessible;
+  font-size: 1.4rem;
+}

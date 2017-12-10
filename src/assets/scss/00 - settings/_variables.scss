@@ -1,0 +1,40 @@
+// Colours
+$color-primary:    #399BFF;
+$color-secondary:  #F34B30;
+
+// Shades
+$white:            #FFFFFF;
+$gray-lightest:    #F9F9F9;
+$gray-lighter:     #DDDDDD;
+$gray-light:       #999999;
+$gray-accessible:  #767676;
+$gray:             #666666;
+$gray-dark:        #444444;
+$gray-darker:      #333333;
+$black:            #000000;
+
+// Spacing
+$gutter-width:     2rem;
+
+// Media Query Breakpoints
+$bp-smallest:      20em;
+$bp-small:         30em;
+$bp-medium:        45em;
+$bp-large:         60em;
+$bp-largest:       72em;
+
+// Links
+$link-color:       $color-primary;
+$link-color-hover: darken($color-primary, 10);
+$link-color-focus: darken($color-primary, 15);
+
+// Logo
+$logo-color-1:     $color-primary;
+$logo-color-2:     $color-secondary;
+$logo-size-base:   6rem;
+$logo-offset:      8%;
+
+// Layout
+$bp-layout:        $bp-large;
+$sidebar-width:    20rem;
+$post-overlap:     9rem;

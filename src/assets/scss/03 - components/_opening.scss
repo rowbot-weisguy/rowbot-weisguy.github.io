@@ -1,0 +1,23 @@
+.opening {
+  margin-bottom: 2rem;
+}
+
+.opening__title {
+  margin-bottom: 0.5rem;
+
+  @include at-least($bp-large) {
+    font-size: 5rem;
+  }
+}
+
+.opening__subtitle {
+  max-width: 48rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.opening__meta {
+  @extend %quote-font;
+  color: $gray-accessible;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,75 @@
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $logo-size-base;
+  height: $logo-size-base;
+  margin: 0 auto 0 0;
+  font-size: $logo-size-base / 2;
+  font-weight: 600;
+
+  @include at-least($bp-layout) {
+    margin: 0 auto 4rem;
+    height: $logo-size-base * 2;
+    width: $logo-size-base * 2;
+    font-size: $logo-size-base;
+  }
+}
+
+.logo__effects {
+  @include cover-parent;
+
+  // Overlapping Circles
+  &:before,
+  &:after {
+    @include cover-parent;
+    content: "";
+    z-index: 1;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+  }
+  &:before {
+    transform: translate(-$logo-offset, -$logo-offset);
+    background-color: rgba($logo-color-1, 1);
+  }
+  &:after {
+    transform: translate($logo-offset, $logo-offset);
+    background-color: rgba($logo-color-2, 1);
+  }
+
+  // Hover State
+  .logo:hover & {
+    transition: transform 0.3s ease-out;
+    transform: rotate(180deg);
+
+    &:before,
+    &:after {
+      transition: transform 0.3s ease-out;
+    }
+    &:before {
+      transform: translate($logo-offset, $logo-offset);
+    }
+    &:after {
+      transform: translate(-$logo-offset, -$logo-offset);
+    }
+  }
+}
+
+.logo__initial {
+  color: $white;
+  position: relative;
+  z-index: 2;
+  display: block;
+  vertical-align: middle;
+}
+
+.logo__party {
+  position: relative;
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 95%;
+  height: 95%;
+}

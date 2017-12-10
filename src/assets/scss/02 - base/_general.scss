@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: $gray-darker;
+  background-color: $gray-lightest;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    transition: color 0.1s ease-out;
+    color: $link-color-hover;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
