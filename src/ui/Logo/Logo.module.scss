@@ -1,3 +1,8 @@
+@import "../../assets/scss/vars/colours";
+@import "../../assets/scss/vars/spacing";
+@import "../../assets/scss/vars/mixins";
+@import "../../assets/scss/vars/breakpoints";
+
 .logo {
   position: relative;
   display: flex;
@@ -6,34 +11,36 @@
   width: $logo-size-base;
   height: $logo-size-base;
   margin: 0 auto 0 0;
-  font-size: $logo-size-base / 2;
+  font-size: $logo-size-base * 0.5;
   font-weight: 600;
 
   @include at-least($bp-layout) {
     margin: 0 auto 4rem;
     height: $logo-size-base * 2;
     width: $logo-size-base * 2;
-    font-size: $logo-size-base;
+    font-size: $logo-size-base * 0.75;
   }
 }
 
-.logo__effects {
+.effects {
   @include cover-parent;
 
   // Overlapping Circles
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     @include cover-parent;
     content: "";
     z-index: 1;
     border-radius: 50%;
     mix-blend-mode: multiply;
   }
-  &:before {
+
+  &::before {
     transform: translate(-$logo-offset, -$logo-offset);
     background-color: rgba($logo-color-1, 1);
   }
-  &:after {
+
+  &::after {
     transform: translate($logo-offset, $logo-offset);
     background-color: rgba($logo-color-2, 1);
   }
@@ -43,28 +50,27 @@
     transition: transform 0.3s ease-out;
     transform: rotate(180deg);
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       transition: transform 0.3s ease-out;
     }
-    &:before {
+    &::before {
       transform: translate($logo-offset, $logo-offset);
     }
-    &:after {
+    &::after {
       transform: translate(-$logo-offset, -$logo-offset);
     }
   }
 }
 
-.logo__initial {
+.initial {
   color: $white;
   position: relative;
   z-index: 2;
   display: block;
-  vertical-align: middle;
 }
 
-.logo__party {
+.party {
   position: relative;
   z-index: 2;
   display: none;
