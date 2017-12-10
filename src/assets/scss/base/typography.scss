@@ -31,13 +31,13 @@ html {
     font-size: 87.5%;
   }
   @include at-least($bp-largest) {
-    // font-size: 100%;
+    font-size: 100%;
   }
 }
 
 body {
   @extend %body-font;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 
