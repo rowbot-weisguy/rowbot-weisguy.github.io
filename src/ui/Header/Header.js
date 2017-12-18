@@ -14,7 +14,7 @@ const local = {
       text: 'Blog',
     },
     {
-      url: '/about/',
+      url: '/about',
       text: 'About',
     },
   ],
