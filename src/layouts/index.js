@@ -10,25 +10,27 @@ import Footer from '../ui/Footer/Footer';
 import '../assets/scss/common.scss';
 import styles from './index.module.scss';
 
-const TemplateWrapper = ({ children }) => (
-  <div className={styles.layout}>
-    <Helmet
-      title="Rowan Weismiller — Frontend Developer"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'design, development' },
-      ]}
-    />
-    <Header modifiers={styles.header} />
-    <div className={styles.content}>
-      <main className={styles.main}>
-        {children()}
-      </main>
-      <Footer />
+const TemplateWrapper = ({ children }) => {
+  return (
+    <div className={styles.layout}>
+      <Helmet
+        title="Rowan Weismiller — Frontend Developer"
+        meta={[
+          { name: 'description', content: 'Sample' },
+          { name: 'keywords', content: 'design, development' },
+        ]}
+      />
+      <Header modifiers={styles.header} />
+      <div className={styles.content}>
+        <main className={styles.main}>
+          {children()}
+        </main>
+        <Footer />
+      </div>
+      <Typekit kitId="twt3aky" />
     </div>
-    <Typekit kitId="twt3aky" />
-  </div>
-);
+  );
+};
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
