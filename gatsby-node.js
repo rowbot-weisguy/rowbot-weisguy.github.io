@@ -17,6 +17,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           id
           title
           slug
+          body {
+            id
+            childMarkdownRemark {
+              html
+            }
+          }
         }
       }
     }
