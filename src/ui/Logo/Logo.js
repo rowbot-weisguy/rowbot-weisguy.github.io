@@ -6,9 +6,13 @@ import styles from './Logo.module.scss';
 
 const Logo = ({ url }) => (
   <Link to={url} className={styles.logo}>
-    <span className={styles.initial} aria-hidden="true">R</span>
-    <span className={styles.effects} aria-hidden="true"></span>
-    <span className={styles.party} aria-hidden="true"><img src="/assets/images/rowan-party.gif"/></span>
+    <span className={styles.initial} aria-hidden="true">
+      R
+    </span>
+    <span className={styles.effects} aria-hidden="true" />
+    <span className={styles.party} aria-hidden="true">
+      <img src="/assets/images/rowan-party.gif" />
+    </span>
     <span className="sr-only">Rowan Weismiller</span>
   </Link>
 );

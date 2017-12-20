@@ -5,7 +5,9 @@ import classnames from 'classnames';
 import styles from './Button.module.scss';
 
 const Button = ({ url, text, modifiers }) => (
-  <Link to={url} className={classnames(styles.button, modifiers)}>{text}</Link>
+  <Link to={url} className={classnames(styles.button, modifiers)}>
+    {text}
+  </Link>
 );
 
 export default Button;

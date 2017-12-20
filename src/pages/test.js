@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
 const Test = () => (
   <div>
@@ -7,6 +7,6 @@ const Test = () => (
     <p>Welcome to the test page</p>
     <Link to="/">Go back to the homepage</Link>
   </div>
-)
+);
 
-export default Test
+export default Test;

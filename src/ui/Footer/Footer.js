@@ -42,17 +42,11 @@ const outside = {
 };
 
 const Footer = ({ modifiers }) => (
-  <footer className={classnames(
-    styles.footer,
-    modifiers,
-  )}>
+  <footer className={classnames(styles.footer, modifiers)}>
     <LinkList header={local.header} links={local.links} horizontal="true" />
     <LinkList header={outside.header} links={outside.links} horizontal="true" />
-    <p className={classnames(
-      styles.fineprint,
-      'js-super-party-button',
-    )}>
-        Powered by nachos in Vancouver, Canada
+    <p className={classnames(styles.fineprint, 'js-super-party-button')}>
+      Powered by nachos in Vancouver, Canada
     </p>
   </footer>
 );

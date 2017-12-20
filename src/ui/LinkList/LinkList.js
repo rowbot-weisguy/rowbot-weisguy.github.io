@@ -13,16 +13,9 @@ const LinkJsx = (link, index, arr) => (
 
 const LinkList = ({ links, header, horizontal }) => (
   <div>
-    { header &&
-      <h3 className={styles.header}>{header}</h3>
-    }
-    <ul className={classnames(
-      styles.list,
-      horizontal && styles.horizontal,
-    )}>
-      { links &&
-        links.map(LinkJsx)
-      }
+    {header && <h3 className={styles.header}>{header}</h3>}
+    <ul className={classnames(styles.list, horizontal && styles.horizontal)}>
+      {links && links.map(LinkJsx)}
     </ul>
   </div>
 );

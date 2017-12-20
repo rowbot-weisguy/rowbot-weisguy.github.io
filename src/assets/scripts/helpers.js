@@ -1,7 +1,7 @@
 export function ajaxGet(url) {
   return new Promise(function(resolve, reject) {
     let req = new XMLHttpRequest();
-    req.open("GET", url);
+    req.open('GET', url);
     req.onload = function() {
       if (req.status === 200) {
         resolve(req.response);
@@ -11,7 +11,7 @@ export function ajaxGet(url) {
     };
 
     req.onerror = function() {
-      reject(new Error("Network error"));
+      reject(new Error('Network error'));
     };
     req.send();
   });

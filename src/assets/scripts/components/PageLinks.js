@@ -30,7 +30,9 @@ const PageLinks = (function() {
     fetch(url)
       .then(response => response.text())
       .then(render)
-      .catch(function(err) { throw new Error(err); });
+      .catch(function(err) {
+        throw new Error(err);
+      });
   }
 
   function handleLink(event) {
@@ -46,17 +48,19 @@ const PageLinks = (function() {
 
   function addListeners() {
     const links = Array.from(document.querySelectorAll('a'));
-    links.filter(isInternalLink).forEach(link => link.addEventListener('click', handleLink));
+    links
+      .filter(isInternalLink)
+      .forEach(link => link.addEventListener('click', handleLink));
     window.onpopstate = function(e) {
       load(document.location.href);
-    }
+    };
   }
 
   return {
     init: function() {
       addListeners();
-    }
+    },
   };
-}());
+})();
 
 export default PageLinks;

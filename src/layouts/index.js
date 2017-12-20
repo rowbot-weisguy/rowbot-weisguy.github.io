@@ -21,9 +21,7 @@ const TemplateWrapper = ({ children }) => {
       />
       <Header modifiers={styles.header} />
       <div className={styles.content}>
-        <main className={styles.main}>
-          {children()}
-        </main>
+        <main className={styles.main}>{children()}</main>
         <Footer />
       </div>
       <Typekit kitId="twt3aky" />
