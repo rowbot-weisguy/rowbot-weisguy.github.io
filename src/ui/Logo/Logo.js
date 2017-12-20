@@ -7,13 +7,19 @@ import partyGif from '../../assets/images/rowan-party.gif';
 import styles from './Logo.module.scss';
 
 const Logo = ({ url, party }) => (
-  <Link to={url} className={styles.logo}>
+  <Link to={url} className={classnames(
+    'logo',
+    styles.logo,
+  )}>
     {!party &&
       <span className={styles.initial} aria-hidden="true">
         R
       </span>
     }
-    <span className={styles.effects} aria-hidden="true" />
+    <span className={classnames(
+      styles.effects,
+      party && styles.partyEffects,
+    )} aria-hidden="true" />
     {party &&
       <span className={styles.party} aria-hidden="true">
         <img src={partyGif} />

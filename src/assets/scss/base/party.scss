@@ -1,0 +1,32 @@
+@import "../vars/colours";
+@import "../vars/animations";
+
+.party {
+  background-color: $gray-darker;
+  color: $white;
+
+  .card {
+    background-color: $gray;
+  }
+
+  .card__subtitle {
+    color: $white;
+  }
+
+  a:not(.logo) {
+    animation: 1s rainbow-foreground linear infinite;
+
+    &::after {
+      animation: 1s rainbow-background linear infinite;
+    }
+  }
+
+  .author__text,
+  .author__date {
+    color: $gray-lighter;
+  }
+
+  button {
+    animation: 1s rainbow-background linear infinite;
+  }
+}

@@ -36,7 +36,10 @@ class Root extends React.Component {
           }
         </Helmet>
         <Header party={this.state.party} action={this.toggleParty} modifiers={styles.header} />
-        <div className={styles.content}>
+        <div className={classnames(
+          styles.content,
+          this.state.party && styles.contentParty,
+        )}>
           <main className={styles.main}>{this.props.children()}</main>
           <Footer />
         </div>

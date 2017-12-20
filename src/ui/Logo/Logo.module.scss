@@ -1,3 +1,4 @@
+@import "../../assets/scss/vars/animations";
 @import "../../assets/scss/vars/colours";
 @import "../../assets/scss/vars/spacing";
 @import "../../assets/scss/vars/mixins";
@@ -60,6 +61,23 @@
     &::after {
       transform: translate(-$logo-offset, -$logo-offset);
     }
+  }
+}
+
+.partyEffects {
+  :global { animation: spin 2s linear infinite; }
+  
+  &::before,
+  &::after {
+    mix-blend-mode: normal;
+  }
+
+  &:before {
+    :global { animation: 1s logo-pulse linear infinite; }
+  }
+
+  &:after {
+    :global { animation: 1s logo-pulse-reverse linear infinite; }
   }
 }
 

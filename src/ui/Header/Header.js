@@ -21,7 +21,11 @@ const local = {
 };
 
 const Header = ({ modifiers, party, action}) => (
-  <header className={classnames(styles.header, modifiers)}>
+  <header className={classnames(
+    styles.header,
+    modifiers,
+    party && styles.party,
+  )}>
     <Logo url="/" party={party}/>
     <nav className={styles.nav}>
       <LinkList inHeader links={local.links}/>

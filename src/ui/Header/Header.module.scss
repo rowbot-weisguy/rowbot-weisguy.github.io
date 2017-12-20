@@ -22,6 +22,18 @@
   }
 }
 
+.party {
+  background-color: $black;
+
+  @include at-most($bp-layout) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6rem;
+  }
+}
+
 .nav {
   text-align: center;
 }
