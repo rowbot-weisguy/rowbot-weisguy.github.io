@@ -5,7 +5,7 @@ import Link from '../Link/Link';
 
 import styles from './LinkList.module.scss';
 
-const LinkJsx = (link, index, arr) => (
+const generateLinkJsx = (link, index, arr) => (
   <li className={styles.item} key={index}>
     <Link url={link.url} text={link.text} />
   </li>
@@ -15,7 +15,7 @@ const LinkList = ({ links, header, horizontal }) => (
   <div>
     {header && <h3 className={styles.header}>{header}</h3>}
     <ul className={classnames(styles.list, horizontal && styles.horizontal)}>
-      {links && links.map(LinkJsx)}
+      {links && links.map(generateLinkJsx)}
     </ul>
   </div>
 );
