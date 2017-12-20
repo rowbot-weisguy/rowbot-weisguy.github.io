@@ -1,4 +1,6 @@
-@import "../../assets/scss/vars/colours";
+@import "../../assets/scss/vars/spacing";
+@import "../../assets/scss/vars/mixins";
+@import "../../assets/scss/vars/breakpoints";
 
 .list {
   padding: 0;
@@ -6,6 +8,21 @@
 
 .item {
   display: block;
+}
+
+@include at-most($bp-layout) {
+  .inHeader .list {
+    margin: 0;
+  }
+
+  .inHeader .item {
+    display: inline-block;
+    margin-bottom: 0;
+    
+    a {
+      padding: 1rem;
+    }
+  }
 }
 
 .horizontal {

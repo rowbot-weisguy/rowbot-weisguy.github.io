@@ -3,8 +3,8 @@ import classnames from 'classnames';
 
 import styles from './Button.module.scss';
 
-const Button = ({ onClickHandler, text, modifiers }) => (
-  <button onClick={onClickHandler} className={classnames(styles.button, modifiers)}>
+const Button = ({ onClickHandler, text, modifier }) => (
+  <button onClick={onClickHandler} className={classnames(styles.button, modifier)}>
     {text}
   </button>
 );

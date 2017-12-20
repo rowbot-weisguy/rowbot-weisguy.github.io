@@ -24,12 +24,12 @@ const Header = ({ modifiers, party, action}) => (
   <header className={classnames(styles.header, modifiers)}>
     <Logo url="/" party={party}/>
     <nav className={styles.nav}>
-      <LinkList links={local.links}/>
+      <LinkList inHeader links={local.links}/>
     </nav>
     <div className={styles.actions}>
       <Button
         onClickHandler={action}
-        modifiers={party && 'party'}
+        modifier={party && 'party'}
         text={
           party
           ? "Chill 😴"

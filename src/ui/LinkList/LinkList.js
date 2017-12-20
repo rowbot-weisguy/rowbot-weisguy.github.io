@@ -11,8 +11,8 @@ const generateLinkJsx = (link, index, arr) => (
   </li>
 );
 
-const LinkList = ({ links, header, horizontal }) => (
-  <div>
+const LinkList = ({ links, header, horizontal, inHeader }) => (
+  <div className={inHeader && styles.inHeader}>
     {header && <h3 className={styles.header}>{header}</h3>}
     <ul className={classnames(styles.list, horizontal && styles.horizontal)}>
       {links && links.map(generateLinkJsx)}
