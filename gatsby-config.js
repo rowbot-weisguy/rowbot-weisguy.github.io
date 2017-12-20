@@ -14,5 +14,11 @@ module.exports = {
         host: `preview.contentful.com`,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: `UA-61048127-1`,
+    //   },
+    // },
   ],
 }
