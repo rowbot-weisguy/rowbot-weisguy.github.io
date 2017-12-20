@@ -20,19 +20,21 @@ const local = {
   ],
 };
 
-const Header = ({ modifiers, action }) => (
+const Header = ({ modifiers, party, action}) => (
   <header className={classnames(styles.header, modifiers)}>
-    <Logo url="/" />
+    <Logo url="/" party={party}/>
     <nav className={styles.nav}>
-      <LinkList links={local.links} />
+      <LinkList links={local.links} party={party}/>
     </nav>
     <div className={styles.actions}>
-      <Button onClickHandler={action} text="Party 🎉" />
-      <audio
-        loop
-        className="js-party-music"
-        src="/assets/sounds/sandstorm.mp3"
-        preload="none"
+      <Button
+        onClickHandler={action}
+        party={party}
+        text={
+          party
+          ? "Chill 😴"
+          : "Party 🎉"
+        }
       />
     </div>
   </header>
