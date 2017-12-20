@@ -11,6 +11,18 @@ import '../assets/scss/common.scss';
 import styles from './index.module.scss';
 
 class Root extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {party: false};
+    this.toggleParty = this.toggleParty.bind(this);
+  }
+
+  toggleParty() {
+    this.setState(previousState => {
+      return {party: !previousState.party};
+    });
+  }
+
   render() {
     return (
       <div className={styles.layout}>
@@ -19,7 +31,7 @@ class Root extends React.Component {
           <meta name="description" content="Rowan Weismiller is a frontend developer and community organizer interested in the web, cities, and cats."/>
           <meta name="keywords" content="rowan weismiller frontend development civic tech community"/>
         </Helmet>
-        <Header modifiers={styles.header} />
+        <Header action={this.toggleParty} modifiers={styles.header} />
         <div className={styles.content}>
           <main className={styles.main}>{this.props.children()}</main>
           <Footer />
