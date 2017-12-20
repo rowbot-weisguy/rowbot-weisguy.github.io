@@ -20,14 +20,14 @@ const local = {
   ],
 };
 
-const Header = ({ modifiers }) => (
+const Header = ({ modifiers, ...props }) => (
   <header className={classnames(styles.header, modifiers)}>
     <Logo url="/" />
     <nav className={styles.nav}>
       <LinkList links={local.links} />
     </nav>
     <div className={styles.actions}>
-      <Button url="/" text="Party 🎉" modifiers="js-party-button" />
+      <Button text="Party 🎉" />
       <audio
         loop
         className="js-party-music"
