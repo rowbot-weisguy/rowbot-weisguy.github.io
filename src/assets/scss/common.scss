@@ -5,6 +5,18 @@
 @import "base/typography";
 @import "base/party";
 
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin: 2rem 0;
+}
+
+.video iframe {
+  @include cover-parent;
+}
+
 .sr-only {
   position: absolute;
   left: -10000px;
