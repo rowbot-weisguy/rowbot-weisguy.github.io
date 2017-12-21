@@ -26,12 +26,29 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     }
+    allContentfulPost {
+      edges {
+        node {
+          id
+          createdAt
+          slug
+          title
+          emoji
+          body {
+            id
+            childMarkdownRemark {
+              html
+            }
+          }
+        }
+      }
+    }
   }
-  `
+  `;
 
   return new Promise((resolve, reject) => {
     const templates = {
-      // post: path.resolve(`src/layouts/post.js`),
+      post: path.resolve(`src/layouts/Post/Post.js`),
       page: path.resolve(`src/layouts/Page/Page.js`),
     };
 
@@ -41,12 +58,21 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
 
       const pages = result.data.allContentfulPage.edges;
+      const posts = result.data.allContentfulPost.edges;
 
       // Create pages for each markdown file.
       pages.forEach(({ node }) => {
         createPage({
           path: node.slug,
           component: templates.page,
+          context: node,
+        });
+      });
+
+      posts.forEach(({ node }) => {
+        createPage({
+          path: `blog/${node.slug}`,
+          component: templates.post,
           context: node,
         });
       });

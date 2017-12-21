@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
             key={index}
             title={post.title}
             subtitle={post.createdAt}
-            link={post.slug}
+            link={`blog/${post.slug}`}
             emoji={post.emoji}
           />
         ))}
