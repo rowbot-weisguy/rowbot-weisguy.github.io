@@ -5,7 +5,7 @@ import Link from '../Link/Link';
 
 import styles from './LinkList.module.scss';
 
-const generateLinkJsx = (link, index, arr) => (
+const generateLinkJsx = (link, index) => (
   <li className={styles.item} key={index}>
     <Link url={link.url} text={link.text} />
   </li>
