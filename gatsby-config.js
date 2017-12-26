@@ -10,15 +10,14 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `06gqdoo3hu2p`,
-        accessToken: `e29e422b90fb247049c9cd812bca9c0276dd28c1dde7bff00d3b104c20f8576f`,
-        host: `preview.contentful.com`,
+        accessToken: `1554342d1f641d908802cad76a0174cc7218c2e790259b28060b50239f5f6540`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `UA-61048127-1`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-61048127-1`,
+      },
+    },
   ],
 }
