@@ -2,10 +2,13 @@ import React from 'react';
 import graphql from 'graphql';
 import Link from 'gatsby-link';
 
+import { getPostDate } from '../lib/dates';
+
 import Container from '../ui/Container/Container';
 import Card from '../ui/Card/Card';
 
 const IndexPage = ({ data }) => {
+  // There should only be one 'homepage' entry
   const fields = { ...data.allContentfulHomepage.edges[0].node };
 
   return (
@@ -24,7 +27,7 @@ const IndexPage = ({ data }) => {
           <Card
             key={index}
             title={post.title}
-            subtitle={post.createdAt}
+            subtitle={getPostDate(post)}
             link={`blog/${post.slug}`}
             emoji={post.emoji}
           />
