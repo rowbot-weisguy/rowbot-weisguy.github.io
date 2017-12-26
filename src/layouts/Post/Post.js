@@ -30,7 +30,10 @@ const getDateStringFromISO = (timestamp) => {
 const Post = ({ pathContext }) => (
   <article className={styles.post}>
     <h1 className={styles.title}>{pathContext.title}</h1>
-    <p className={styles.meta}>Posted on {getDateStringFromISO(pathContext.createdAt)}</p>
+    <p className={styles.meta}>Posted on { pathContext.originalPublishDate
+      ? getDateStringFromISO(pathContext.originalPublishDate)
+      : getDateStringFromISO(pathContext.createdAt)
+    }</p>
     <div
       dangerouslySetInnerHTML={{
         __html: pathContext.body.childMarkdownRemark.html,

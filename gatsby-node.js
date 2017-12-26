@@ -30,6 +30,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       edges {
         node {
           id
+          originalPublishDate
           createdAt
           slug
           title
