@@ -54,6 +54,7 @@ export const query = graphql`
           }
           posts {
             id
+            originalPublishDate
             createdAt
             slug
             title
