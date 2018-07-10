@@ -71,13 +71,13 @@
 }
 
 @keyframes logo-pulse {
-  0% { transform: translate($logo-offset, $logo-offset); }
-  50% { transform: translate(-$logo-offset, -$logo-offset); }
-  100% { transform: translate($logo-offset, $logo-offset); }
-}
-
-@keyframes logo-pulse-reverse {
   0% { transform: translate(-$logo-offset, -$logo-offset); }
   50% { transform: translate($logo-offset, $logo-offset); }
   100% { transform: translate(-$logo-offset, -$logo-offset); }
+}
+
+@keyframes logo-pulse-reverse {
+  0% { transform: translate($logo-offset, $logo-offset); }
+  50% { transform: translate(-$logo-offset, -$logo-offset); }
+  100% { transform: translate($logo-offset, $logo-offset); }
 }
