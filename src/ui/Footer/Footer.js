@@ -34,10 +34,6 @@ const outside = {
       url: 'https://ca.linkedin.com/in/rowanweismiller',
       text: 'LinkedIn',
     },
-    {
-      url: 'http://thenachoclub.com/',
-      text: 'The Nacho Club',
-    },
   ],
 };
 
