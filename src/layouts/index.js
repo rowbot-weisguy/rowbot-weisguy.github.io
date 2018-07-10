@@ -11,13 +11,15 @@ import Footer from '../ui/Footer/Footer';
 import '../assets/scss/common.scss';
 import styles from './index.module.scss';
 
-soundManager.setup({ debugMode: false });
-
 class Root extends React.Component {
   constructor(props) {
     super(props);
     this.state = {party: false};
     this.toggleParty = this.toggleParty.bind(this);
+  }
+
+  componentDidMount() {
+    soundManager.setup({ debugMode: false });
   }
 
   toggleParty() {
