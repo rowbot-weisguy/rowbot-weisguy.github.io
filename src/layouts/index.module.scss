@@ -22,10 +22,12 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 
   @include at-least($bp-layout) {
-    overflow-y: scroll;
+    overflow-y: auto;
     flex: 1 0 $sidebar-width;
   }
 }
@@ -37,6 +39,7 @@
 }
 
 .main {
+  flex-grow: 1;
   position: relative;
   padding: 4rem 2rem;
 

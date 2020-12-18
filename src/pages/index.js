@@ -1,11 +1,11 @@
 import React from 'react';
 import graphql from 'graphql';
-import Link from 'gatsby-link';
 
 import { getPostDate } from '../lib/dates';
 
 import Container from '../ui/Container/Container';
 import Card from '../ui/Card/Card';
+import Link from '../ui/Link/Link';
 
 const IndexPage = ({ data }) => {
   // There should only be one 'homepage' entry
@@ -16,12 +16,12 @@ const IndexPage = ({ data }) => {
       <h1>{fields.title}</h1>
       <p className="c-p -large">{fields.opener}</p>
       <p>
-        <Link to={fields.action.url}>{fields.action.text}</Link>
+        <Link url={fields.action.url} text={fields.action.text} />
       </p>
 
       <hr />
 
-      <h2>Content dump</h2>
+      <h2>Posts</h2>
       <Container size="small">
         {fields.posts.map((post, index) => (
           <Card
